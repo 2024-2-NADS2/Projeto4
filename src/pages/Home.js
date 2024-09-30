@@ -7,10 +7,10 @@ import FourthSection from '../components/Home/FourthSection';
 function Home() {
   return (
     <div>
-      <FirstSection />
-      <SecondSection />
-      <ThirdSection />
-      <FourthSection />
+      <FirstSection/>
+      <SecondSection/>
+      <ThirdSection/>
+      <FourthSection/>
     </div>
   );
 }

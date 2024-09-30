@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+body {
+    font-family: 'Inter', sans-serif; /* Aplica a fonte a todo o texto do corpo */
+}
+
+/* Se necessário, aplique diretamente ao botão */
+button {
+    font-family: 'Inter', sans-serif; /* Garante que todos os botões usem a mesma fonte */
+}
+
+/* -- Registro --  */
+
+.first-container {
+    background-color: #88B3F9;
+    height: 30.25rem;
+    display: flex; /* Mantém a direção padrão horizontal */
+    align-items: center; /* Alinha verticalmente os itens no centro */
+    justify-content: center; /* Opcional: centraliza o conteúdo horizontalmente */
+    gap: 10%;
+  
+}
+
+.text-container {
+    margin-left: 20px; /* Espaçamento à esquerda do texto para separar da imagem */
+}
+
+.img-pessoa2 {
+  
+}
+
+.text {
+    display: block; /* Garante que o elemento seja exibido como bloco */
+    margin: 20 0; /* Espaçamento acima e abaixo */
+    line-height: 1.5; /* Aumenta o espaçamento entre linhas */
+}
+
+/* Estilize o título e o parágrafo conforme necessário */
+h1.text {
+  color: white;
+    font-size: 2rem; /* Ajusta o tamanho do título */
+    font-weight: bold; /* Deixa o texto mais forte */
+}
+
+p.text {
+    font-size: 1.0rem; /* Ajusta o tamanho do parágrafo */
+}
