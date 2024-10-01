@@ -15,7 +15,7 @@
 ## Descrição
 
 <p align="center">
-![](https://github.com/2024-2-NADS2/Projeto4/blob/main/imagens/logosyp2.png)
+![](https://github.com/2024-2-NADS2/Projeto4/blob/main/imagens/logosyp2.jpg)
 
 
 
