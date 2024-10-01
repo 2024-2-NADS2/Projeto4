@@ -15,19 +15,17 @@
 ## Descrição
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/2024-2-NADS2/Projeto4/main/imagens/logoSYP.png" alt="Logo SYP">
-  <br>
-  Game by <a href="http://www.nyphotographic.com/">Nick Youngson</a> 
-  <a rel="license" href="https://creativecommons.org/licenses/by-sa/3.0/">CC BY-SA 3.0</a> 
-  <a href="http://pix4free.org/">Pix4free</a>
+![](https://github.com/2024-2-NADS2/Projeto4/blob/main/imagens/logoSYP.png)
+  Game by <a href="http://www.nyphotographic.com/">Nick Youngson</a> <a rel="license" href="https://creativecommons.org/licenses/by-sa/3.0/">CC BY-SA 3.0</a> <a href="http://pix4free.org/">Pix4free</a>
 </p>
 
 
-De um a dois parágrafos sobre o que é seu projeto e o que ele faz.
+
 <br><br>
-Meu projeto ajuda estudantes FECAP a configurarem seus githubs.
+O projeto SyP é uma plataforma online dedicada à conexão entre doadores e pessoas que precisam de livros e roupas. Inspirado no conceito do Food to Save, que visa reduzir o desperdício de alimentos, o SyP se concentra em promover a redistribuição de itens essenciais para educação e bem-estar. O site permite que usuários cadastrem livros e peças de roupas que não utilizam mais, para que outros possam solicitar esses itens. Dessa forma, a plataforma não só incentiva o consumo consciente e a reutilização de recursos, mas também cria uma rede de solidariedade, aproximando quem deseja doar de quem mais necessita.
+
 <br><br>
-May the force be with you!
+A interface do SyP é simples e intuitiva, facilitando a busca e doação de itens. O site oferece filtros por localização, tipo de item, e estado de conservação, permitindo que doadores e beneficiários encontrem rapidamente o que procuram. Além disso, a plataforma incentiva a colaboração entre ONGs e outras instituições de caridade, ampliando o alcance das doações. O principal objetivo do SyP é criar um impacto social positivo ao reduzir o desperdício e oferecer uma segunda vida a livros e roupas, ajudando a fortalecer o senso de comunidade e promover a sustentabilidade.
 <br><br>
 
 ## 🛠 Estrutura de pastas
