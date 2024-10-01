@@ -1,46 +1,72 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
 
 body {
-    font-family: 'Inter', sans-serif; /* Aplica a fonte a todo o texto do corpo */
+  font-family: "Inter", sans-serif; /* Aplica a fonte a todo o texto do corpo */
 }
 
 /* Se necessário, aplique diretamente ao botão */
 button {
-    font-family: 'Inter', sans-serif; /* Garante que todos os botões usem a mesma fonte */
+  font-family: "Inter", sans-serif; /* Garante que todos os botões usem a mesma fonte */
 }
 
-/* -- Registro --  */
+/* ------- Registro -------*/
+
+.first-container,
+.second-container,
+.third-container,
+.fourth-container {
+  height: 30.25rem;
+  display: flex; /* Mantém a direção padrão horizontal */
+  align-items: center; /* Alinha verticalmente os itens no centro */
+  justify-content: center; /* Opcional: centraliza o conteúdo horizontalmente */
+  gap: 10%;
+}
 
 .first-container {
-    background-color: #88B3F9;
-    height: 30.25rem;
-    display: flex; /* Mantém a direção padrão horizontal */
-    align-items: center; /* Alinha verticalmente os itens no centro */
-    justify-content: center; /* Opcional: centraliza o conteúdo horizontalmente */
-    gap: 10%;
-  
+  background-color: #88b3f9;
+}
+.second-container {
+  background-color: #faf3c4;
+}
+.third-container {
+  background-color: #ffffff;
+}
+.fourth-container {
+  background-color: #cccccc;
 }
 
 .text-container {
-    margin-left: 20px; /* Espaçamento à esquerda do texto para separar da imagem */
-}
-
-.img-pessoa2 {
-  
+  margin-left: 20px; /* Espaçamento à esquerda do texto para separar da imagem */
 }
 
 .text {
-    display: block; /* Garante que o elemento seja exibido como bloco */
-    margin: 20 0; /* Espaçamento acima e abaixo */
-    line-height: 1.5; /* Aumenta o espaçamento entre linhas */
+  display: block; /* Garante que o elemento seja exibido como bloco */
+  margin: 20 0; /* Espaçamento acima e abaixo */
+  line-height: 1.5; /* Aumenta o espaçamento entre linhas */
 }
 
-h1.text {
+h1.text-first-container,
+h1.text-second-container,
+h1.text-third-container,
+h1.text-fourth-container {
+  font-size: 2rem; /* Ajusta o tamanho do título */
+  font-weight: bold; /* Deixa o texto mais forte */
+}
+h1.text-first-container {
   color: white;
-    font-size: 2rem; /* Ajusta o tamanho do título */
-    font-weight: bold; /* Deixa o texto mais forte */
 }
-
+h1.text-second-container {
+  color: #88b3f9;
+}
+h1.text-third-container {
+  color: #FF720C;
+}
+h1.text-fourth-container {
+  color: #3126FF;
+}
 p.text {
-    font-size: 1.0rem; /* Ajusta o tamanho do parágrafo */
+  font-size: 1rem; /* Ajusta o tamanho do parágrafo */
 }
+/* ------- Registro -------  */
+
+/* ------- Coleta -------*/
