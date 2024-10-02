@@ -1,6 +1,7 @@
 import React from "react";
-import { Link, useLocation } from 'react-router-dom';
-import '../css/navbar.css' 
+import { Link, useLocation } from "react-router-dom";
+import "../css/navbar.css";
+import logo from "../assets/logoSYP.png";
 
 function Navbar() {
   const location = useLocation();
@@ -8,8 +9,11 @@ function Navbar() {
   return (
     <nav className="navbar">
       <div className="logo">
-        <Link to="/">SYP</Link>
+        <Link to="/">
+          <img className="logo-img" src={logo} alt="Pessoas realizando busca" />
+        </Link>
       </div>
+
       <ul className="nav-links">
         <li className={location.pathname === "/about" ? "active" : ""}>
           <Link to="/about">Quem Somos</Link>
@@ -23,8 +27,8 @@ function Navbar() {
         <li className={location.pathname === "/doe-agora" ? "active" : ""}>
           <Link to="/doe-agora">Doe Agora</Link>
         </li>
-        <button className="btn-initial">Doar</button>
       </ul>
+      <button className="btn-initial">Doar</button>
     </nav>
   );
 }

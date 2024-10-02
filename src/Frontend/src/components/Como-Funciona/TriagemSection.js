@@ -1,11 +1,11 @@
 import React from 'react';
-import pessoa from '../../assets/Como-Funciona/person2.svg';
+import triagem from '../../assets/Como-Funciona/triagem.svg';
 import '../../css/comofunciona.css';
 
 function TriagemSection() {
   return (
     <section className="third-container">
-      <img src={pessoa} className='img-pessoa2' alt="Pessoa se registrando" />
+      <img src={triagem} alt="Pessoas realizando busca" />
       <div className="text-container">
         <h1 className="text-third-container">Triagem</h1>
         <p className="text-third-container">

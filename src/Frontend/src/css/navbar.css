@@ -1,49 +1,55 @@
 /*----------- inicio navbar ----------- */
 
 .navbar {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 20px 20px;
-  }
-  
-  
-  .logo {
-    position: absolute; /* Posiciona o logo à esquerda */
-    left: 20px; /* Ajuste conforme necessário */
-  }
-  
-  .nav-links {
-    display: block; /* Mude de flex para block */
-    margin: 0 auto; /* Centraliza os itens */
-    text-align: center; /* Alinha o texto ao centro */
-  }
-  
-  .nav-links li {
-    display: inline; /* Mantenha os itens na mesma linha */
-    margin: 0 20px; /* Adicione margens laterais conforme necessário */
-  }
-  
-  nav button {
-    position: absolute; /* Posiciona o botão à direita */
-    right: 20px; /* Ajuste conforme necessário */
-    width: 6rem;
-    height: 2.5rem;
-    background-color: #3126FF;
-    color: white;
-    font-weight: 600;
-    border: none;
-    border-radius: 0.5rem;
-    top: 1.75%;
-  }
-  
-  
-  nav button:hover {
-    background-image: linear-gradient(to right, #3126FF 0%, #0a065f 51%, #3126FF 100%);
-    transition: background-position 1.5s;
-    background-size: 200% auto;
-  }
-  
+  display: flex;
+  justify-content: space-between; /* Distribui os itens */
+  align-items: center; /* Centraliza verticalmente */
+  padding: 20px 20px;
+  height: 2rem; /* Define uma altura fixa para a navbar */
+  overflow: hidden; /* Impede que a navbar se expanda */
+}
+
+.logo {
+  margin-right: auto; /* Faz com que o logo fique na esquerda */
+}
+
+.logo img {
+  width: 80px;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.nav-links {
+  display: flex; /* Mantém os itens na horizontal */
+  justify-content: center; /* Centraliza os links horizontalmente */
+  flex: 1; /* Ocupa o espaço disponível no meio */
+}
+
+.nav-links li {
+  list-style: none;
+  margin: 0 20px; /* Adiciona espaçamento entre os itens */
+}
+
+nav button {
+  width: 6rem;
+  height: 2.5rem;
+  background-color: #3126FF;
+  color: white;
+  font-weight: 600;
+  border: none;
+  border-radius: 0.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+nav button:hover {
+  background-image: linear-gradient(to right, #3126FF 0%, #0a065f 51%, #3126FF 100%);
+  transition: background-position 1.5s;
+  background-size: 200% auto;
+}
+
   
   ul {
       list-style: none;

@@ -1,11 +1,11 @@
 import React from 'react';
-import pessoa from '../../assets/Como-Funciona/person2.svg';
+import entrega from '../../assets/Como-Funciona/entrega.svg';
 import '../../css/comofunciona.css';
 
 function EntregaSection() {
   return (
     <section className="fourth-container">
-      <img src={pessoa} className='img-pessoa2' alt="Pessoa se registrando" />
+      <img src={entrega} alt="Realização de uma entrega" />
       <div className="text-container">
         <h1 className="text-fourth-container">Entrega</h1>
         <p className="text-fourth-container">
