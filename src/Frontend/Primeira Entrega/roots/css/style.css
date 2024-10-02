@@ -1,0 +1,299 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+/*----------- inicio navbar ----------- */
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.logo {
+    margin-right: auto;
+}
+
+.nav-links {
+    margin-top: 0.5rem;
+    display: flex;
+    flex-direction: row;
+    margin-left: auto; /* Move os itens para a direita */
+    justify-content: center;
+}
+
+.nav-links li {
+    margin-left: 5rem; /* Adiciona espaço à esquerda de cada item da lista */
+}
+
+.nav-links li:last-child {
+    margin-right: 0; /* Remove o espaçamento do último item */
+}
+nav button{
+    width: 8rem;
+    height: 3rem;
+    background-color: #3126FF;
+    color: white;
+    font-weight: 600;
+    border: none;
+    border-radius: 0.5rem;
+    margin-left: 25rem;
+}
+
+nav button:hover{
+    background-image: linear-gradient(to right, #3126FF 0%, #0a065f 51%, #3126FF 100%);
+    transition: background-position 1.5s;
+    background-size: 200% auto;
+}
+ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+li a {
+    
+    text-decoration: none;
+    font-weight: 500;
+    font-family: 'Inter', sans-serif;
+    color: black;
+    
+}
+
+#QuemSomos, #first-container span {
+    color: #3126FF;
+    font-weight: 500;
+}
+/*----------- fim navbar ----------- */
+
+
+/* ----------- comeco primeira section -----------*/
+#first-container {
+    background-color: #FAF3C4;
+    width: 100rem;
+    max-width: 100%;
+    height: 36.25rem;
+    display: flex;
+    flex-direction: column; /* Alinha os itens verticalmente */
+    justify-content: top; /* Centraliza os itens verticalmente */
+    padding-left: 8rem; /* Adiciona um espaço à esquerda */
+    position: relative;
+}
+
+#first-container #first-h1{
+    margin-top: 5rem;
+    font-weight: 700;
+    color: #000;
+}
+
+#first-container h6 {
+    margin-top: 1.3rem; /* Adiciona espaço entre o h1 e o p */
+    line-height: 1.5;
+    max-width: 80%;   
+}
+         
+.cta-container {
+    display: flex;
+    align-items: center; /* Alinha verticalmente */
+    margin-top: 2rem;
+}
+
+#btn-first-container {
+    width: 15rem;
+    height: 3rem;
+    background-color: #3126FF;
+    color: white;
+    font-weight: 600;
+    border: none;
+    border-radius: 0.5rem;
+    margin-right: 2rem; /* Adiciona espaço entre o botão e o h1 */
+}
+
+#btn-first-container:hover {
+    background-image: linear-gradient(to right, #3126FF 0%, #0a065f 51%, #3126FF 100%);
+    transition: background-position 1.5s;
+    background-size: 200% auto;
+}
+
+#first-container img {
+    position: absolute; 
+    right: 1rem; /* Espaço da imagem para a direita */
+    top: 3rem; /* Espaço da imagem do topo do container */
+    max-width: 100%; /* Garante que a imagem não exceda a largura do container */
+    width: 31rem;
+    height: 31rem;
+}
+/* ----------- fim primeira section -----------*/
+#second-container {
+    background-color: #121210;
+    color: #fff;
+    padding: 40px 20px;
+    height: 30rem;
+    text-align: center;
+}
+
+#second-container .steps {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100%; /* Garante que os passos ocupem toda a altura do contêiner */
+}
+
+#second-container .step {
+    max-width: 150px;
+    display: flex;
+    flex-direction: column; /* Empilha o conteúdo verticalmente */
+    justify-content: center; /* Alinha verticalmente ao centro */
+    align-items: center; /* Alinha horizontalmente ao centro */
+    text-align: center; /* Centraliza o texto dentro de cada passo */
+}
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+      transform: translateY(0);
+    }
+    40% {
+      transform: translateY(-20px);
+    }
+    60% {
+      transform: translateY(-10px);
+    }
+  }
+  
+ img {
+    transition: transform 0.3s;
+  }
+  
+  img:hover {
+    animation: bounce 1s;
+  }
+  
+
+#cor-funciona {
+    color: #88B3F9;
+}
+
+#third-container {
+    color: black;
+    padding: 40px 20px;
+    text-align: center;
+    height: 29rem;
+    display: flex; /* Adiciona display flex ao container */
+    flex-direction: column; /* Alinha os itens verticalmente */
+    justify-content: center; /* Centraliza verticalmente os itens */
+}
+
+#third-container .imgs-logo {
+    display: flex;
+    justify-content: space-around; /* Espaça igualmente as imagens */
+    align-items: center; /* Centraliza as imagens verticalmente */
+    flex-wrap: wrap; /* Permite que as imagens quebrem para a linha seguinte se necessário */
+}
+
+#third-container .img-logo {
+    max-width: 150px;
+    display: flex;
+    justify-content: center; /* Centraliza a imagem horizontalmente */
+    align-items: center; /* Centraliza a imagem verticalmente */
+}
+
+#third-container img {
+    max-width: 100%;
+    height: auto;
+}
+#third-container h1 {
+    margin-bottom: 5rem;
+}
+
+#faz{
+    color: #3126FF;
+}
+
+#fourth-container {
+    color: orange;
+    padding: 40px 20px;
+    text-align: center;
+    background-color: #F2F2F2;
+    height: 34rem;
+    
+}
+#fourth-container h1 {
+    text-align: left;
+    color: #3126FF;
+    margin-left: 5rem;
+    font-weight: 600;
+}
+
+#fourth-container .imgs-logo {
+    display: flex;
+    justify-content: space-around; /* Espaça igualmente as imagens */
+    align-items: center;
+}
+
+#fourth-container  .img-logo img {
+    margin-top: 5rem; 
+    max-width: 100%; /* Faz com que a imagem se ajuste ao contêiner */
+    height: auto; /* Mantém a proporção da imagem */
+}
+
+#fourth-container  .img-logo p {
+    color: #3126FF;
+    font-weight: 700;
+    font-size: 1.5rem;
+    white-space: nowrap; /* Evita que o texto quebre em várias linhas */
+    margin: 0; /* Remove margens padrão */
+}
+
+#fourth-container  .img-logo h3 {
+    color: #3126FF;
+    font-weight: 700;
+    margin: 0; /* Remove margens padrão */
+}
+
+.footer {
+    background-color: #333; /* Cor de fundo do footer */
+    color: #fff; /* Cor do texto */
+    padding: 20px;
+    text-align: center;
+    font-size: 14px;
+}
+
+.footer span {
+    margin: 0; /* Remove a margem padrão do parágrafo */
+}
+   /* Estilo para os contadores */
+   .counter {
+    font-size: 2rem; /* Ajuste o tamanho da fonte conforme necessário */
+    font-weight: bold;
+    transition: all 1s ease-out;
+  }
+  
+/* ----------- Responsividade -----------*/
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+        padding: 0;
+        margin: 0;
+        background-color: #fff;
+        position: absolute;
+        top: 60px;
+        left: 0;
+    }
+
+    .nav-links li {
+        padding: 10px 0;
+        border-top: 1px solid #ddd;
+    }
+
+    .menu-icon {
+        display: flex;
+    }
+
+    .navbar.active .nav-links {
+        display: flex;
+    }
+}
