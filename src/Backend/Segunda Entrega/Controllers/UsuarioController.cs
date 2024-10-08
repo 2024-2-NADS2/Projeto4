@@ -11,21 +11,29 @@ namespace ProjetoPI.Controllers
         [HttpPost("login")]
         public IActionResult Login(string email, string senha)
         {
-            // Aqui você pode realizar a verificação do usuário
-            if (string.IsNullOrEmpty(email) || string.IsNullOrEmpty(senha))
+            try
             {
-                return BadRequest("Email e senha são obrigatórios.");
-            }
+                // Aqui você pode realizar a verificação do usuário
+                if (string.IsNullOrEmpty(email) || string.IsNullOrEmpty(senha))
+                {
+                    return BadRequest("Email e senha são obrigatórios.");
+                }
 
-            // Simulação de verificação de usuário
-            if (email == "usuario@exemplo.com" && senha == "123456")
+                // Simulação de verificação de usuário
+                if (email == "usuario@exemplo.com" && senha == "123456")
+                {
+                    return Ok("Login bem-sucedido.");
+                }
+                else
+                {
+                    return Unauthorized("Usuário ou senha incorretos.");
+                }
+            } catch(Exception ex)
             {
-                return Ok("Login bem-sucedido.");
+                Console.WriteLine("Ocorreu um erro" + ex);
+                return null;
             }
-            else
-            {
-                return Unauthorized("Usuário ou senha incorretos.");
-            }
+           
         }
     }
 }

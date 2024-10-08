@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "AZOM2UPlbJd5CE4QKF0LkNUhJf3PxBGwHGExKfDWHD5iQ2GeZZn1eGZ91l1syCjfKGWbJnqVZgb53ZMRfn5J9w==",
+  "dgSpecHash": "+2hZkunExfUcXdhnMDwMnbwb5wuOVWt68uYu8AqOrOhmFcR8h7+n5SkvJaHedJUG6GbpaluUx3ApPoVS2J2jUg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\24026205\\Documents\\SYP-API\\ProjetoPI.csproj",
+  "projectFilePath": "C:\\Users\\24026205\\Documents\\Projeto4\\src\\Backend\\Segunda Entrega\\ProjetoPI.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\24026205\\.nuget\\packages\\microsoft.extensions.apidescription.server\\6.0.5\\microsoft.extensions.apidescription.server.6.0.5.nupkg.sha512",
     "C:\\Users\\24026205\\.nuget\\packages\\microsoft.openapi\\1.2.3\\microsoft.openapi.1.2.3.nupkg.sha512",
