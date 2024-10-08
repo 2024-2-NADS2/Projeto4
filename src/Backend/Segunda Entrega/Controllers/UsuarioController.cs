@@ -12,8 +12,6 @@ namespace ProjetoPI.Controllers
         public IActionResult Login(string email, string senha)
         {
             try
-            {
-                // Aqui você pode realizar a verificação do usuário
                 if (string.IsNullOrEmpty(email) || string.IsNullOrEmpty(senha))
                 {
                     return BadRequest("Email e senha são obrigatórios.");
@@ -30,7 +28,7 @@ namespace ProjetoPI.Controllers
                 }
             } catch(Exception ex)
             {
-                Console.WriteLine("Ocorreu um erro" + ex);
+                Console.WriteLine("Ocorreu um erro: " + ex);
                 return null;
             }
            
