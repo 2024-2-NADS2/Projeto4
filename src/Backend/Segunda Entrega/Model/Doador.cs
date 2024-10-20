@@ -7,8 +7,8 @@ namespace ProjetoPI.Model
         private string CPF;
         private List<Produto> ProdutosParaDoar;
 
-        public Doador(string nome, string email, string senha, string cpf)
-            : base(nome, email, senha)
+        public Doador(string nome, string email, string senha, string cpf, string user)
+            : base(nome, email, senha, user)
         {
             CPF = cpf;
              ProdutosParaDoar = new List<Produto>();

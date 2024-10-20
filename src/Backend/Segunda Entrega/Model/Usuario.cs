@@ -1,26 +1,37 @@
-﻿namespace ProjetoPI.Model
+﻿using ProjetoPI.DTO;
+
+namespace ProjetoPI.Model
 {
     public class Usuario
     {
-        protected string Nome;
+        public int Id { get; set; } // Chave primária
+        protected string NomeCompleto;
         protected string Email;
         protected string Senha;
-        
-        public Usuario(string nome, string email, string senha)
+        protected string User;
+
+        // Construtor que recebe um UsuarioDTO
+        public Usuario(UsuarioDTO usuarioDTO)
         {
-            Nome = nome;
-            Email = email;
-            Senha = senha;
+            NomeCompleto = usuarioDTO.Nome;
+            Email = usuarioDTO.Email;
+            Senha = usuarioDTO.Senha;
+            User = usuarioDTO.User;
+        }
+
+        public Usuario()
+        {
+
         }
 
         public string GetNome()
         {
-            return Nome;
+            return NomeCompleto;
         }
 
         public void SetNome(string nome)
         {
-            Nome = nome;
+            NomeCompleto = nome;
         }
 
         public string GetEmail()
@@ -41,6 +52,16 @@
         public void SetSenha(string senha)
         {
             Senha = senha;
+        }
+
+        public string GetUser()
+        {
+            return User;
+        }
+
+        public void SetUser(string user)
+        {
+            User = user;
         }
     }
 }
