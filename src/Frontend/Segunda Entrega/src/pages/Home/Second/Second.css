@@ -1,0 +1,41 @@
+#second-container {
+    background-color: #121210;
+    color: #fff;
+    padding: 40px 20px;
+    height: 30rem;
+    text-align: center;
+  }
+  #first-container #first-h1 {
+  
+  }
+  #second-container .steps {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100%; /* Garante que os passos ocupem toda a altura do contêiner */
+  }
+  #second-container .step img {
+    margin-bottom: 0.5rem; /* Aproximadamente 8px, para separar itens */
+  }
+  
+  #second-container .step h3 {
+    margin-top: 0.5rem; /* Aproximadamente 8px */
+    margin-bottom: 0.5rem;
+  }
+  
+  #second-container .step p {
+    margin-top: 0.5rem;
+  }
+  
+  #second-container .step {
+    max-width: 150px;
+    display: flex;
+    flex-direction: column; /* Empilha o conteúdo verticalmente */
+    justify-content: center; /* Alinha verticalmente ao centro */
+    align-items: center; /* Alinha horizontalmente ao centro */
+    text-align: center; /* Centraliza o texto dentro de cada passo */
+  }
+  #cor-funciona {
+    color: #88b3f9;
+  }
+  

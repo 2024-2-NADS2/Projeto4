@@ -1,72 +1,55 @@
-@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
-
-body {
-  font-family: "Inter", sans-serif; /* Aplica a fonte a todo o texto do corpo */
-}
-
-/* Se necessário, aplique diretamente ao botão */
-button {
-  font-family: "Inter", sans-serif; /* Garante que todos os botões usem a mesma fonte */
-}
-
-/* ------- Registro -------*/
-
+/* Containers gerais */
 .first-container,
 .second-container,
 .third-container,
 .fourth-container {
   height: 30.25rem;
-  display: flex; /* Mantém a direção padrão horizontal */
-  align-items: center; /* Alinha verticalmente os itens no centro */
-  justify-content: center; /* Opcional: centraliza o conteúdo horizontalmente */
+  display: flex;
+  align-items: center;
+  justify-content: center;
   gap: 10%;
+  max-width: 100%;
 }
+
+/* Ordem para posicionamento da imagem */
 
 .first-container {
   background-color: #88b3f9;
+  flex-direction: row; /* Imagem à esquerda */
 }
 .second-container {
   background-color: #faf3c4;
+  flex-direction: row-reverse; /* Imagem à direita */
 }
 .third-container {
   background-color: #ffffff;
+  flex-direction: row-reverse; /* Imagem à esquerda */
 }
 .fourth-container {
   background-color: #cccccc;
+  flex-direction: row; /* Imagem à direita */
 }
 
+/* Texto e imagem */
 .text-container {
-  margin-left: 20px; /* Espaçamento à esquerda do texto para separar da imagem */
+  margin-left: 20px;
 }
 
-.text {
-  display: block; /* Garante que o elemento seja exibido como bloco */
-  margin: 20 0; /* Espaçamento acima e abaixo */
-  line-height: 1.5; /* Aumenta o espaçamento entre linhas */
+img {
+  max-width: 50%;
+  height: auto;
 }
 
+/* Títulos */
 h1.text-first-container,
 h1.text-second-container,
 h1.text-third-container,
 h1.text-fourth-container {
-  font-size: 2rem; /* Ajusta o tamanho do título */
-  font-weight: bold; /* Deixa o texto mais forte */
+  font-size: 2rem;
+  font-weight: bold;
 }
-h1.text-first-container {
-  color: white;
-}
-h1.text-second-container {
-  color: #88b3f9;
-}
-h1.text-third-container {
-  color: #FF720C;
-}
-h1.text-fourth-container {
-  color: #3126FF;
-}
-p.text {
-  font-size: 1rem; /* Ajusta o tamanho do parágrafo */
-}
-/* ------- Registro -------  */
 
-/* ------- Coleta -------*/
+h1.text-first-container { color: white; }
+h1.text-second-container { color: #88b3f9; }
+h1.text-third-container { color: #FF720C; }
+h1.text-fourth-container { color: #2A6783; }

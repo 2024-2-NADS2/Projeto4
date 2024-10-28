@@ -1,0 +1,40 @@
+#fourth-container {
+    color: orange;
+    padding: 40px 20px;
+    text-align: center;
+    background-color: #f2f2f2;
+    height: 34rem;
+  }
+  #fourth-container h1 {
+    text-align: left;
+    color: #2A6783;
+    margin-left: 5rem;
+    font-weight: 600;
+  }
+  
+  #fourth-container .imgs-logo {
+    display: flex;
+    justify-content: space-around; /* Espaça igualmente as imagens */
+    align-items: center;
+  }
+  
+  #fourth-container .img-logo img {
+    margin-top: 5rem;
+    max-width: 100%; /* Faz com que a imagem se ajuste ao contêiner */
+    height: auto; /* Mantém a proporção da imagem */
+  }
+  
+  #fourth-container .img-logo p {
+    color: #2A6783;
+    font-weight: 700;
+    font-size: 1.5rem;
+    white-space: nowrap; /* Evita que o texto quebre em várias linhas */
+    margin: 0; /* Remove margens padrão */
+  }
+  
+  #fourth-container .img-logo h3 {
+    color: #2A6783;
+    font-weight: 700;
+    margin: 0; /* Remove margens padrão */
+  }
+  

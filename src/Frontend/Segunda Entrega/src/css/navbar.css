@@ -14,8 +14,8 @@
 }
 
 .logo img {
-  width: 80px;
-  height: 80px;
+  width: 10rem;
+  height: 5rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -30,12 +30,17 @@
   list-style: none;
   margin: 0 20px; /* Adiciona espaçamento entre os itens */
 }
+/* Remove o sublinhado e define a cor do texto como branca */
+.text-white {
+  text-decoration: none;
+  color: white;
+}
 
+/* Estilos do botão */
 nav button {
   width: 6rem;
   height: 2.5rem;
-  background-color: #3126FF;
-  color: white;
+  background-color: #2A6783;
   font-weight: 600;
   border: none;
   border-radius: 0.5rem;
@@ -45,7 +50,7 @@ nav button {
 }
 
 nav button:hover {
-  background-image: linear-gradient(to right, #3126FF 0%, #0a065f 51%, #3126FF 100%);
+  background-image: linear-gradient(to right, #2A6783 0%, #0a065f 51%, #3126FF 100%);
   transition: background-position 1.5s;
   background-size: 200% auto;
 }
@@ -70,10 +75,10 @@ nav button:hover {
   }
   
   .nav-links li a:hover {
-    color: #3126FF; /* Cor ao passar o mouse */
+    color: #2A6783; /* Cor ao passar o mouse */
   }
   
   .active a {
-    color: #3126FF; /* Cor do link ativo */
+    color: #2A6783; /* Cor do link ativo */
   }
   
