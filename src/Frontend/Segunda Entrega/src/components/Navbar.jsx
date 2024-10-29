@@ -21,8 +21,8 @@ function Navbar() {
         <li className={location.pathname === "/como-funciona" ? "active" : ""}>
           <Link to="/como-funciona">Como Funciona</Link>
         </li>
-        <li className={location.pathname === "/parceiros" ? "active" : ""}>
-          <Link to="/parceiros">Parceiros</Link>
+        <li className={location.pathname === "/contato" ? "active" : ""}>
+          <Link to="/contato">Contato</Link>
         </li>
         <li className={location.pathname === "/doe-agora" ? "active" : ""}>
           <Link to="/doe-agora">Doe Agora</Link>

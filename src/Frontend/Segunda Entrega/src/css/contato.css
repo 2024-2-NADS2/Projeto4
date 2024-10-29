@@ -1,0 +1,10 @@
+.background {
+    background-color: #FFFBE2;
+    height: 36.25rem;
+    display: flex;
+    flex-direction: column; /* Alinha os itens verticalmente */
+    justify-content: top;
+    padding-left: 8rem; /* Adiciona um espaço à esquerda */
+    position: relative;
+  }
+
