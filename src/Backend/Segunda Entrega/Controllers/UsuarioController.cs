@@ -1,8 +1,6 @@
 ﻿using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.EntityFrameworkCore;
-using ProjetoPI.Data;
-using ProjetoPI.DTO;
+using ProjetoPI.Interface;
 using ProjetoPI.Model;
 
 namespace ProjetoPI.Controllers
@@ -11,12 +9,14 @@ namespace ProjetoPI.Controllers
     [ApiController]
     public class UsuarioController : ControllerBase
     {
-        private readonly AppDbContext _context;
 
-        public UsuarioController(AppDbContext context)
+        private readonly IUsuarioService _usuarioService;
+
+        public UsuarioController(IUsuarioService usuarioService)
         {
-            _context = context;
+            _usuarioService = usuarioService;
         }
+
         // Endpoint para login
         [HttpPost("login")]
         public IActionResult Login(string email, string senha)
@@ -28,8 +28,9 @@ namespace ProjetoPI.Controllers
                     return BadRequest("Email e senha são obrigatórios.");
                 }
 
-                // Simulação de verificação de usuário
-                if (email == "usuario@exemplo.com" && senha == "123456")
+                var loginValido = _usuarioService.ValidarLogin(email, senha);
+
+                if (loginValido)
                 {
                     return Ok("Login bem-sucedido.");
                 }
@@ -41,30 +42,28 @@ namespace ProjetoPI.Controllers
             catch (Exception ex)
             {
                 Console.WriteLine("Ocorreu um erro: " + ex);
-                return null;
+                return StatusCode(StatusCodes.Status500InternalServerError, "Ocorreu um erro no servidor.");
             }
-
         }
 
-        [HttpPost]
-        [Route("cadastrar")]
-        public IActionResult CadastrarUsuario([FromBody] UsuarioDTO usuarioDTO)
+        [HttpPost("criar")]
+        public IActionResult CriarUsuario([FromBody] Usuario usuario)
         {
-            if (usuarioDTO == null)
+            try
             {
-                return BadRequest("Usuário não pode ser nulo.");
+                if (string.IsNullOrEmpty(usuario.GetEmail()) || string.IsNullOrEmpty(usuario.GetSenha()))
+                {
+                    return BadRequest("Email e senha são obrigatórios.");
+                }
+
+                _usuarioService.CriarUsuario(usuario);
+                return Ok("Usuário criado com sucesso.");
             }
-            // Criar um novo usuário a partir do DTO
-            var novoUsuario = new Usuario(usuarioDTO);
-
-            // Adicionar o novo usuário ao contexto
-            _context.Usuarios.Add(novoUsuario);
-            _context.SaveChanges();
-
-            return CreatedAtAction(nameof(CadastrarUsuario), new { id = novoUsuario.GetUser() }, novoUsuario);
+            catch (Exception ex)
+            {
+                Console.WriteLine("Ocorreu um erro: " + ex);
+                return StatusCode(StatusCodes.Status500InternalServerError, "Ocorreu um erro no servidor.");
+            }
         }
     }
-
 }
-
-

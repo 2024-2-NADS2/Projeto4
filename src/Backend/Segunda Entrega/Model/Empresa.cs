@@ -6,10 +6,10 @@ namespace ProjetoPI.Model
     {
 
         private string CNPJ;
-        public Empresa(string nome, string email, string senha, string cnpj, string user)
-            : base(nome, email, senha, user)
+        public Empresa(string nome, string email, string senha, string cpf)
+            : base(nome, email, senha)
         {
-            CNPJ = cnpj;
+            CNPJ = cpf;
         }
         public string GetCNPJ()
         {
