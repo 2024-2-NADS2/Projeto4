@@ -28,8 +28,8 @@ function Navbar() {
           <Link to="/doe-agora">Doe Agora</Link>
         </li>
       </ul>
-      <button className={`btn-initial ${location.pathname === "/cadastro" ? "active" : ""}`}>
-  <Link to="/cadastro" className="text-white"> Doar </Link>
+      <button className={`btn-initial ${location.pathname === "/login" ? "active" : ""}`}>
+  <Link to="/login" className="text-white"> Doar </Link>
 </button>
 
 
