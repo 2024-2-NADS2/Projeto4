@@ -63,3 +63,35 @@ C:\Users\24026205\Downloads\Projeto4-1292f120c9b5033e95a3395093daed62a409cc7c\Pr
 C:\Users\24026205\Downloads\Projeto4-1292f120c9b5033e95a3395093daed62a409cc7c\Projeto4-1292f120c9b5033e95a3395093daed62a409cc7c\src\Backend\Segunda Entrega\obj\Debug\net8.0\ProjetoPI.csproj.CopyComplete
 C:\Users\24026205\Downloads\Projeto4-1292f120c9b5033e95a3395093daed62a409cc7c\Projeto4-1292f120c9b5033e95a3395093daed62a409cc7c\src\Backend\Segunda Entrega\obj\Debug\net8.0\ProjetoPI.genruntimeconfig.cache
 C:\Users\24026205\Downloads\Projeto4-1292f120c9b5033e95a3395093daed62a409cc7c\Projeto4-1292f120c9b5033e95a3395093daed62a409cc7c\src\Backend\Segunda Entrega\obj\Debug\net8.0\ref\ProjetoPI.dll
+C:\Users\Erika Santana\Downloads\Projeto4-main\Projeto4-main\src\Backend\Segunda Entrega\obj\Debug\net8.0\ProjetoPI.csproj.AssemblyReference.cache
+C:\Users\Erika Santana\Downloads\Projeto4-main\Projeto4-main\src\Backend\Segunda Entrega\obj\Debug\net8.0\ProjetoPI.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Erika Santana\Downloads\Projeto4-main\Projeto4-main\src\Backend\Segunda Entrega\obj\Debug\net8.0\ProjetoPI.AssemblyInfoInputs.cache
+C:\Users\Erika Santana\Downloads\Projeto4-main\Projeto4-main\src\Backend\Segunda Entrega\obj\Debug\net8.0\ProjetoPI.AssemblyInfo.cs
+C:\Users\Erika Santana\Downloads\Projeto4-main\Projeto4-main\src\Backend\Segunda Entrega\obj\Debug\net8.0\ProjetoPI.csproj.CoreCompileInputs.cache
+C:\Users\Erika Santana\Downloads\Projeto4-main\Projeto4-main\src\Backend\Segunda Entrega\obj\Debug\net8.0\ProjetoPI.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\Erika Santana\Downloads\Projeto4-main\Projeto4-main\src\Backend\Segunda Entrega\obj\Debug\net8.0\ProjetoPI.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\Erika Santana\Downloads\Projeto4-main\Projeto4-main\src\Backend\Segunda Entrega\obj\Debug\net8.0\ProjetoPI.dll
+C:\Users\Erika Santana\Downloads\Projeto4-main\Projeto4-main\src\Backend\Segunda Entrega\obj\Debug\net8.0\refint\ProjetoPI.dll
+C:\Users\Erika Santana\Downloads\Projeto4-main\Projeto4-main\src\Backend\Segunda Entrega\obj\Debug\net8.0\ProjetoPI.pdb
+C:\Users\Erika Santana\Downloads\Projeto4-main\Projeto4-main\src\Backend\Segunda Entrega\bin\Debug\net8.0\appsettings.Development.json
+C:\Users\Erika Santana\Downloads\Projeto4-main\Projeto4-main\src\Backend\Segunda Entrega\bin\Debug\net8.0\appsettings.json
+C:\Users\Erika Santana\Downloads\Projeto4-main\Projeto4-main\src\Backend\Segunda Entrega\bin\Debug\net8.0\ProjetoPI.exe
+C:\Users\Erika Santana\Downloads\Projeto4-main\Projeto4-main\src\Backend\Segunda Entrega\bin\Debug\net8.0\ProjetoPI.deps.json
+C:\Users\Erika Santana\Downloads\Projeto4-main\Projeto4-main\src\Backend\Segunda Entrega\bin\Debug\net8.0\ProjetoPI.runtimeconfig.json
+C:\Users\Erika Santana\Downloads\Projeto4-main\Projeto4-main\src\Backend\Segunda Entrega\bin\Debug\net8.0\ProjetoPI.dll
+C:\Users\Erika Santana\Downloads\Projeto4-main\Projeto4-main\src\Backend\Segunda Entrega\bin\Debug\net8.0\ProjetoPI.pdb
+C:\Users\Erika Santana\Downloads\Projeto4-main\Projeto4-main\src\Backend\Segunda Entrega\bin\Debug\net8.0\Microsoft.OpenApi.dll
+C:\Users\Erika Santana\Downloads\Projeto4-main\Projeto4-main\src\Backend\Segunda Entrega\bin\Debug\net8.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\Erika Santana\Downloads\Projeto4-main\Projeto4-main\src\Backend\Segunda Entrega\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\Erika Santana\Downloads\Projeto4-main\Projeto4-main\src\Backend\Segunda Entrega\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\Erika Santana\Downloads\Projeto4-main\Projeto4-main\src\Backend\Segunda Entrega\obj\Debug\net8.0\staticwebassets.build.json
+C:\Users\Erika Santana\Downloads\Projeto4-main\Projeto4-main\src\Backend\Segunda Entrega\obj\Debug\net8.0\staticwebassets.development.json
+C:\Users\Erika Santana\Downloads\Projeto4-main\Projeto4-main\src\Backend\Segunda Entrega\obj\Debug\net8.0\staticwebassets\msbuild.ProjetoPI.Microsoft.AspNetCore.StaticWebAssets.props
+C:\Users\Erika Santana\Downloads\Projeto4-main\Projeto4-main\src\Backend\Segunda Entrega\obj\Debug\net8.0\staticwebassets\msbuild.build.ProjetoPI.props
+C:\Users\Erika Santana\Downloads\Projeto4-main\Projeto4-main\src\Backend\Segunda Entrega\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.ProjetoPI.props
+C:\Users\Erika Santana\Downloads\Projeto4-main\Projeto4-main\src\Backend\Segunda Entrega\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.ProjetoPI.props
+C:\Users\Erika Santana\Downloads\Projeto4-main\Projeto4-main\src\Backend\Segunda Entrega\obj\Debug\net8.0\staticwebassets.pack.json
+C:\Users\Erika Santana\Downloads\Projeto4-main\Projeto4-main\src\Backend\Segunda Entrega\obj\Debug\net8.0\scopedcss\bundle\ProjetoPI.styles.css
+C:\Users\Erika Santana\Downloads\Projeto4-main\Projeto4-main\src\Backend\Segunda Entrega\obj\Debug\net8.0\ProjetoPI.csproj.Up2Date
+C:\Users\Erika Santana\Downloads\Projeto4-main\Projeto4-main\src\Backend\Segunda Entrega\obj\Debug\net8.0\ProjetoPI.genruntimeconfig.cache
+C:\Users\Erika Santana\Downloads\Projeto4-main\Projeto4-main\src\Backend\Segunda Entrega\obj\Debug\net8.0\ref\ProjetoPI.dll
