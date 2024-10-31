@@ -1,1 +1,5 @@
+
+CodeSandbox: https://codesandbox.io/p/github/guilherme1passos/Syp2/draft/distracted-minsky
+
 https://appsyp-hta3f0a6grhugmff.brazilsouth-01.azurewebsites.net/
+
