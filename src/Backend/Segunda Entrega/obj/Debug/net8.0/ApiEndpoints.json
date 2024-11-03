@@ -22,6 +22,38 @@
   },
   {
     "ContainingType": "ProjetoPI.Controllers.UsuarioController",
+    "Method": "CadastrarDoador",
+    "RelativePath": "api/Usuario/cadastrar-doador",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "novoDoador",
+        "Type": "Doador",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ProjetoPI.Controllers.UsuarioController",
+    "Method": "CadastrarOng",
+    "RelativePath": "api/Usuario/cadastrar-ong",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "novaOng",
+        "Type": "ProjetoPI.Model.Ong",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ProjetoPI.Controllers.UsuarioController",
     "Method": "Login",
     "RelativePath": "api/Usuario/login",
     "HttpMethod": "POST",
@@ -29,16 +61,21 @@
     "Order": 0,
     "Parameters": [
       {
-        "Name": "email",
-        "Type": "System.String",
-        "IsRequired": false
-      },
-      {
-        "Name": "senha",
-        "Type": "System.String",
-        "IsRequired": false
+        "Name": "usuarioCadastrado",
+        "Type": "ProjetoPI.DTO.UsuarioDTO",
+        "IsRequired": true
       }
     ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ProjetoPI.Controllers.UsuarioController",
+    "Method": "GetQuantidadeUsuarios",
+    "RelativePath": "api/Usuario/quantidade",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
     "ReturnTypes": []
   }
 ]

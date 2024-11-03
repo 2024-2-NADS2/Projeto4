@@ -1,45 +1,43 @@
-﻿using ProjetoPI.Interface;
+﻿using ProjetoPI.Data;
+using ProjetoPI.Interface;
 using ProjetoPI.Model;
 
 namespace ProjetoPI.Repository
 {
     public class UsuarioRepository : IUsuarioRepository
     {
-        private List<Usuario> usuarios = new List<Usuario>(); // Lista para simular o banco de dados
+        private readonly ApplicationDbContext _context;
 
-
-        public Usuario GetUsuarioByNome(string nome)
+        public UsuarioRepository(ApplicationDbContext context)
         {
-            if (nome == "usuario da silva")
-            {
-            return usuarios.FirstOrDefault(u => u.GetNome() == nome);
-               
-            }
-            return null;
+            _context = context;
+        }
+
+        public Usuario GetUsuarioByEmail(string email)
+        {
+            return _context.Usuarios.FirstOrDefault(u => u.Email == email);
+        }
+
+        public void AdicionarUsuario(Usuario usuario)
+        {
+            _context.Usuarios.Add(usuario);
+            _context.SaveChanges(); // Salva as alterações no banco de dados
+        }
+
+        public List<Usuario> GetAllUsuarios()
+        {
+            return _context.Usuarios.ToList();
         }
 
         public Usuario GetUsuarioByEmailSenha(string email, string senha)
         {
-            if (email == "teste@teste.com" && senha == "1232")
-            {
-                return new Usuario(email, senha);
-            }
-            return null;
+            return _context.Usuarios.FirstOrDefault(u => u.Email == email && u.Senha == senha);
         }
 
-
-      
-
-        //public Usuario GetUsuarioByEmailSenha(string email, string senha)
-        //{
-        //    // Busca o usuário pelo email e senha na lista simulada
-        //    return usuarios.FirstOrDefault(u => u.GetEmail() == email && u.GetSenha() == senha);
-        //}
-
-        public void CriarUsuario(Usuario usuario)
+        public int GetQuantidadeUsuarios()
         {
-            // Adiciona o usuário à lista simulada
-            usuarios.Add(usuario);
+            return _context.Usuarios.Count();
         }
     }
+
 }

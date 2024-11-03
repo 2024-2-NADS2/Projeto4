@@ -3,6 +3,8 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.OpenApi.Models;
+using Microsoft.EntityFrameworkCore; // Adicione esta linha
+using ProjetoPI.Data; // Namespace para o ApplicationDbContext
 using ProjetoPI.Interface;
 using ProjetoPI.Repository;
 using ProjetoPI.Service;
@@ -16,9 +18,16 @@ builder.Services.AddSwaggerGen(c =>
     c.SwaggerDoc("v1", new OpenApiInfo { Title = "ProjetoPI", Version = "v1" });
 });
 
+// Registra o contexto do banco de dados
+builder.Services.AddDbContext<ApplicationDbContext>(options =>
+    options.UseMySQL(builder.Configuration.GetConnectionString("DefaultConnection"))); // String de conexão
+
 // Registra os serviços e repositórios no contêiner de DI
 builder.Services.AddScoped<IUsuarioRepository, UsuarioRepository>();
 builder.Services.AddScoped<IUsuarioService, UsuarioService>();
+builder.Services.AddScoped<IDoadorRepository, DoadorRepository>();
+builder.Services.AddScoped<IOngRepository, OngRepository>();
+
 
 var app = builder.Build();
 

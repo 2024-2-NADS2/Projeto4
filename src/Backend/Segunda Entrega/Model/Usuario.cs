@@ -1,56 +1,47 @@
-﻿namespace ProjetoPI.Model
+﻿using ProjetoPI.Enum;
+using System.ComponentModel.DataAnnotations;
+using System.Text.Json.Serialization;
+
+namespace ProjetoPI.Model
 {
     public class Usuario
     {
-        protected string Nome;
-        protected string Email;
-        protected string Senha;
+        [Key]
+        private int idUsuario;
+        private string nome;
+        private string email;
+        private string senha;
+        private string endereco;
+        private string telefone;
+        private TipoUsuario tipoUsuario;
 
-        public Usuario(string nome, string email, string senha)
-        {
-            Nome = nome;
-            Email = email;
-            Senha = senha;
-        }
+        public Usuario() { }
 
-        public Usuario(string nome)
+        // Construtor para inicializar a classe
+        [JsonConstructor]
+        public Usuario(string nome, string email, string senha, string endereco, string telefone, TipoUsuario tipoUsuario)
         {
-            Nome = nome;
+            this.nome = nome;
+            this.email = email;
+            this.senha = senha;
+            this.endereco = endereco;
+            this.telefone = telefone;
+            this.tipoUsuario = tipoUsuario;
         }
 
         public Usuario(string email, string senha)
         {
-            Email = email;
-            Senha = senha;
-        }
-        public string GetNome()
-        {
-            return Nome;
+            this.email = email;
+            this.senha = senha;
         }
 
-        public void SetNome(string nome)
-        {
-            Nome = nome;
-        }
-
-        public string GetEmail()
-        {
-            return Email;
-        }
-
-        public void SetEmail(string email)
-        {
-            Email = email;
-        }
-
-        public string GetSenha()
-        {
-            return Senha;
-        }
-
-        public void SetSenha(string senha)
-        {
-            Senha = senha;
-        }
+        // Propriedades públicas para desserialização JSON
+        public int IdUsuario { get => idUsuario; set => idUsuario = value; }
+        public string Nome { get => nome; set => nome = value; }
+        public string Email { get => email; set => email = value; }
+        public string Senha { get => senha; set => senha = value; }
+        public string Endereco { get => endereco; set => endereco = value; }
+        public string Telefone { get => telefone; set => telefone = value; }
+        public TipoUsuario TipoUsuario { get => tipoUsuario; set => tipoUsuario = value; }
     }
 }
