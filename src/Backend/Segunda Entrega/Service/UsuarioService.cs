@@ -18,6 +18,7 @@ namespace ProjetoPI.Service
             return usuario != null; // Retorna verdadeiro se o usuário foi encontrado
         }
 
+
         public void CadastrarUsuario(Usuario usuario)
         {
             _usuarioRepository.AdicionarUsuario(usuario);

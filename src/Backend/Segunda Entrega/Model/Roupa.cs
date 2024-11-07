@@ -1,12 +1,18 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+using System.ComponentModel.DataAnnotations;
+using System.Text.Json.Serialization;
 
-namespace ProjetoPI.Model
+public class Roupa : Produto
 {
-    public class Roupa
-    {
-        
-    }
+    [Required]
+    public TipoRoupa TipoRoupa { get; set; }
+    public string Tamanho { get; set; }
+    public string Cor { get; set; }
+}
+
+public enum TipoRoupa
+{
+    Camisa,
+    Calca,
+    Sapato,
+    Acessorio
 }

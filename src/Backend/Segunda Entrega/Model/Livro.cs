@@ -1,12 +1,10 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+using System.ComponentModel.DataAnnotations;
+using System.Text.Json.Serialization;
 
-namespace ProjetoPI.Model
+public class Livro : Produto
 {
-    public class Livro
-    {
-        
-    }
+    public string Genero { get; set; }
+    public string Autor { get; set; }
+    public string Editora { get; set; }
+   
 }

@@ -1,4 +1,5 @@
 ﻿using Microsoft.EntityFrameworkCore;
+using ProjetoPI.Enum;
 using ProjetoPI.Model;
 
 namespace ProjetoPI.Data
@@ -14,43 +15,53 @@ namespace ProjetoPI.Data
         public DbSet<Ong> Ongs { get; set; }
         public DbSet<Doador> Doadores { get; set; }
 
+        // DbSets específicos para Produto e subclasses
+        public DbSet<Produto> Produtos { get; set; }
+        public DbSet<Roupa> Roupas { get; set; }
+        public DbSet<Livro> Livros { get; set; }
+        public DbSet<Calcado> Calcados { get; set; }
+
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-            // Configuração para a entidade Usuario
             modelBuilder.Entity<Usuario>()
-                .HasKey(u => u.IdUsuario); // Define a chave primária
+                .HasKey(u => u.IdUsuario);
 
             modelBuilder.Entity<Usuario>()
-        .ToTable("Usuarios"); // Define o nome da tabela
+                .ToTable("Usuarios");
 
             modelBuilder.Entity<Doador>()
                 .ToTable("Doadores");
 
             modelBuilder.Entity<Ong>()
                 .ToTable("Ongs");
-            // Configuração para a entidade Doador
+
             modelBuilder.Entity<Doador>()
                 .Property(d => d.Cpf)
                 .IsRequired()
-                .HasMaxLength(14); // Configuração adicional para CPF
+                .HasMaxLength(14);
 
             modelBuilder.Entity<Doador>()
                 .Property(d => d.DataNascimento)
-                .IsRequired(); // Data de nascimento obrigatória
+                .IsRequired();
 
             modelBuilder.Entity<Doador>()
                 .Property(d => d.DataCadastro)
-                .IsRequired(); // Data de cadastro obrigatória
+                .IsRequired();
 
-            // Configuração para a entidade Ong
             modelBuilder.Entity<Ong>()
                 .Property(o => o.Cnpj)
                 .IsRequired()
-                .HasMaxLength(18); // CNPJ obrigatório com limite de 18 caracteres
+                .HasMaxLength(18);
 
             modelBuilder.Entity<Ong>()
                 .Property(o => o.DataCadastro)
-                .IsRequired(); // Data de cadastro obrigatória
+                .IsRequired();
+
+            // Configuração separada para cada subclasse de Produto
+            modelBuilder.Entity<Roupa>().ToTable("Roupas");
+            modelBuilder.Entity<Livro>().ToTable("Livros");
+            modelBuilder.Entity<Calcado>().ToTable("Calcados");
+
         }
     }
 }

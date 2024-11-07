@@ -5,10 +5,11 @@ namespace ProjetoPI.Interface
     public interface IUsuarioRepository
     {
         Usuario GetUsuarioByEmail(string email);
-        void AdicionarUsuario(Usuario usuario);
+        Task AdicionarUsuario(Usuario usuario);
         List<Usuario> GetAllUsuarios();
         Usuario GetUsuarioByEmailSenha(string email, string senha);
-        int GetQuantidadeUsuarios(); // Adicione esta linha
+        Usuario GetUsuarioById(int id);
+        int GetQuantidadeUsuarios(); 
     }
 
 }
