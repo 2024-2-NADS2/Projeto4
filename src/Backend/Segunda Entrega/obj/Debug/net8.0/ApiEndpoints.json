@@ -21,29 +21,25 @@
     "EndpointName": "GetWeatherForecast"
   },
   {
-    "ContainingType": "ProjetoPI.Controllers.LivroController",
-    "Method": "GetAllLivros",
-    "RelativePath": "api/Livro",
-    "HttpMethod": "GET",
+    "ContainingType": "ProdutoController",
+    "Method": "PostarCalcado",
+    "RelativePath": "api/Produto/calcado",
+    "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
-    "Parameters": [],
-    "ReturnTypes": [
+    "Parameters": [
       {
-        "Type": "System.Collections.Generic.List\u00601[[Livro, ProjetoPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
-        "MediaTypes": [
-          "text/plain",
-          "application/json",
-          "text/json"
-        ],
-        "StatusCode": 200
+        "Name": "calcado",
+        "Type": "ProjetoPI.Model.Calcado",
+        "IsRequired": true
       }
-    ]
+    ],
+    "ReturnTypes": []
   },
   {
-    "ContainingType": "ProjetoPI.Controllers.LivroController",
-    "Method": "CadastrarLivro",
-    "RelativePath": "api/Livro",
+    "ContainingType": "ProdutoController",
+    "Method": "PostarLivro",
+    "RelativePath": "api/Produto/livro",
     "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
@@ -54,48 +50,12 @@
         "IsRequired": true
       }
     ],
-    "ReturnTypes": [
-      {
-        "Type": "Livro",
-        "MediaTypes": [
-          "text/plain",
-          "application/json",
-          "text/json"
-        ],
-        "StatusCode": 200
-      }
-    ]
-  },
-  {
-    "ContainingType": "ProjetoPI.Controllers.LivroController",
-    "Method": "GetLivroById",
-    "RelativePath": "api/Livro/{id}",
-    "HttpMethod": "GET",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "id",
-        "Type": "System.Int32",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": [
-      {
-        "Type": "Livro",
-        "MediaTypes": [
-          "text/plain",
-          "application/json",
-          "text/json"
-        ],
-        "StatusCode": 200
-      }
-    ]
+    "ReturnTypes": []
   },
   {
     "ContainingType": "ProdutoController",
     "Method": "PostarRoupa",
-    "RelativePath": "api/Produto",
+    "RelativePath": "api/Produto/roupa",
     "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,

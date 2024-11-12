@@ -3,8 +3,8 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.OpenApi.Models;
-using Microsoft.EntityFrameworkCore; 
-using ProjetoPI.Data; 
+using Microsoft.EntityFrameworkCore;
+using ProjetoPI.Data;
 using ProjetoPI.Interface;
 using ProjetoPI.Repository;
 using ProjetoPI.Service;
@@ -29,8 +29,6 @@ builder.Services.AddScoped<IDoadorRepository, DoadorRepository>();
 builder.Services.AddScoped<IOngRepository, OngRepository>();
 builder.Services.AddScoped<IProdutoRepository, ProdutoRepository>();
 builder.Services.AddScoped<IProdutoService, ProdutoService>();
-builder.Services.AddScoped<ILivroRepository, LivroRepository>();
-
 
 var app = builder.Build();
 

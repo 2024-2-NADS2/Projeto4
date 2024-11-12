@@ -37,15 +37,37 @@ public class ProdutoService : IProdutoService
     }
 
 
-    //realizar testes mais tarde
-
-    public async Task<int> PostarLivroAsync(Livro livro)
+    public async Task<Livro> PostarLivroAsync(Livro livro)
     {
-        return await _produtoRepository.AddProdutoAsync(livro);
+        // Verifica se o usuário existe
+        var usuarioExistente = _usuarioRepository.GetUsuarioById(livro.DoadorId);
+
+        if (usuarioExistente == null)
+        {
+            throw new Exception("Usuário não encontrado.");
+        }
+
+        // Lógica para criação da roupa
+        _context.Livros.Add(livro);
+        await _context.SaveChangesAsync();
+
+        return livro;
     }
 
-    public async Task<int> PostarCalcadoAsync(Calcado calcado)
+    public async Task<Calcado> PostarCalcadoAsync(Calcado calcado)
     {
-        return await _produtoRepository.AddProdutoAsync(calcado);
+        // Verifica se o usuário existe
+        var usuarioExistente = _usuarioRepository.GetUsuarioById(calcado.DoadorId);
+
+        if (usuarioExistente == null)
+        {
+            throw new Exception("Usuário não encontrado.");
+        }
+
+        // Lógica para criação da roupa
+        _context.Calcados.Add(calcado);
+        await _context.SaveChangesAsync();
+
+        return calcado;
     }
 }
