@@ -1,0 +1,11 @@
+.footer {
+    background-color: #333; /* Cor de fundo do footer */
+    color: #fff; /* Cor do texto */
+    padding: 20px;
+    text-align: center;
+    font-size: 14px;
+  }
+  
+  .footer span {
+    margin: 0; /* Remove a margem padrão do parágrafo */
+  }

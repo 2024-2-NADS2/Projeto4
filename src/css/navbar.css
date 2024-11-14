@@ -1,0 +1,84 @@
+/*----------- inicio navbar ----------- */
+
+.navbar {
+  display: flex;
+  justify-content: space-between; /* Distribui os itens */
+  align-items: center; /* Centraliza verticalmente */
+  padding: 20px 20px;
+  height: 2rem; /* Define uma altura fixa para a navbar */
+  overflow: hidden; /* Impede que a navbar se expanda */
+}
+
+.logo {
+  margin-right: auto; /* Faz com que o logo fique na esquerda */
+}
+
+.logo img {
+  width: 10rem;
+  height: 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.nav-links {
+  display: flex; /* Mantém os itens na horizontal */
+  justify-content: center; /* Centraliza os links horizontalmente */
+  flex: 1; /* Ocupa o espaço disponível no meio */
+}
+
+.nav-links li {
+  list-style: none;
+  margin: 0 20px; /* Adiciona espaçamento entre os itens */
+}
+/* Remove o sublinhado e define a cor do texto como branca */
+.text-white {
+  text-decoration: none;
+  color: white;
+}
+
+/* Estilos do botão */
+nav button {
+  width: 6rem;
+  height: 2.5rem;
+  background-color: #2A6783;
+  font-weight: 600;
+  border: none;
+  border-radius: 0.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+nav button:hover {
+  background-image: linear-gradient(to right, #2A6783 0%, #0a065f 51%, #3126FF 100%);
+  transition: background-position 1.5s;
+  background-size: 200% auto;
+}
+
+  
+  ul {
+      list-style: none;
+      display: flex;
+      justify-content: center; /* Certifica-se que a lista de itens está centralizada */
+      align-items: center;
+  }
+  
+  li a {
+      text-decoration: none;
+      font-weight: 500;
+      font-family: 'Inter', sans-serif;
+      color: black;
+  }
+  .nav-links li a {
+    text-decoration: none; /* Remove o sublinhado do link */
+    transition: color 0.1s; /* Animação suave na mudança de cor */
+  }
+  
+  .nav-links li a:hover {
+    color: #2A6783; /* Cor ao passar o mouse */
+  }
+  
+  .active a {
+    color: #2A6783; /* Cor do link ativo */
+  }
+  

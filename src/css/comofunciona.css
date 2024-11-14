@@ -1,0 +1,55 @@
+/* Containers gerais */
+.first-container,
+.second-container,
+.third-container,
+.fourth-container {
+  height: 30.25rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10%;
+  max-width: 100%;
+}
+
+/* Ordem para posicionamento da imagem */
+
+.first-container {
+  background-color: #88b3f9;
+  flex-direction: row; /* Imagem à esquerda */
+}
+.second-container {
+  background-color: #faf3c4;
+  flex-direction: row-reverse; /* Imagem à direita */
+}
+.third-container {
+  background-color: #ffffff;
+  flex-direction: row-reverse; /* Imagem à esquerda */
+}
+.fourth-container {
+  background-color: #cccccc;
+  flex-direction: row; /* Imagem à direita */
+}
+
+/* Texto e imagem */
+.text-container {
+  margin-left: 20px;
+}
+
+img {
+  max-width: 50%;
+  height: auto;
+}
+
+/* Títulos */
+h1.text-first-container,
+h1.text-second-container,
+h1.text-third-container,
+h1.text-fourth-container {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+h1.text-first-container { color: white; }
+h1.text-second-container { color: #88b3f9; }
+h1.text-third-container { color: #FF720C; }
+h1.text-fourth-container { color: #2A6783; }

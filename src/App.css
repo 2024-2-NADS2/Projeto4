@@ -1,0 +1,74 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+body {
+  font-family: "Inter", sans-serif; /* Aplica a fonte a todo o texto do corpo */
+}
+
+/* Se necessário, aplique diretamente ao botão */
+button {
+  font-family: "Inter", sans-serif; /* Garante que todos os botões usem a mesma fonte */
+  cursor: pointer;
+}
+
+.text-white {
+  text-decoration: none;
+  color: white;
+}
+/* ----------- comeco primeira section -----------*/
+
+
+@keyframes bounce {
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-20px);
+  }
+  60% {
+    transform: translateY(-10px);
+  }
+}
+
+/* Aplicando animação para todas as imagens EXCETO àquelas com a classe 'logo-img' */
+img:not(.logo-img):hover {
+  animation: bounce 1s;
+}
+
+/* Estilo para os contadores */
+.counter {
+  font-size: 2rem; /* Ajuste o tamanho da fonte conforme necessário */
+  font-weight: bold;
+  transition: all 1s ease-out;
+}
+
+/* ----------- Responsividade -----------*/
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    background-color: #fff;
+    position: absolute;
+    top: 60px;
+    left: 0;
+  }
+
+  .nav-links li {
+    padding: 10px 0;
+    border-top: 1px solid #ddd;
+  }
+
+  .menu-icon {
+    display: flex;
+  }
+
+  .navbar.active .nav-links {
+    display: flex;
+  }
+}
