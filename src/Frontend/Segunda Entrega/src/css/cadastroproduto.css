@@ -1,0 +1,49 @@
+.cadastro-container {
+    padding: 2rem;
+    background-color: #FEF7CD;
+  }
+  
+  .cadastro-form {
+    max-width: 500px;
+    margin: auto;
+    padding: 2rem;
+    background-color: #FFF;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .cadastro-title {
+    text-align: center;
+  }
+  
+  .cadastro-input {
+    width: 100%;
+    padding: 8px;
+    margin: 8px 0;
+  }
+  
+  .cadastro-select {
+    width: 100%;
+    padding: 8px;
+    margin: 8px 0;
+  }
+  
+  .cadastro-photos {
+    display: flex;
+    gap: 8px;
+  }
+  
+  .cadastro-file {
+    width: 50px;
+    height: 50px;
+  }
+  
+  .cadastro-button {
+    width: 100%;
+    padding: 10px;
+    margin: 16px 0;
+    background-color: #0054FF;
+    color: #FFF;
+    border: none;
+    border-radius: 4px;
+  }

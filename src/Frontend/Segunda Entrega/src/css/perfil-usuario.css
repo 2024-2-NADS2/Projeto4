@@ -1,0 +1,133 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+  }
+  
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #ffefb3;
+  }
+  
+  .logo {
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  .header nav a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+  }
+  
+  .user-menu {
+    display: flex;
+    align-items: center;
+  }
+  
+  .user-avatar {
+    border-radius: 50%;
+    margin-left: 10px;
+    width: 40px;
+    height: 40px;
+  }
+  
+  .profile-card {
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin: 0 auto;
+  }
+  
+  .profile-image {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    margin-right: 20px;
+  }
+  
+  .role {
+    color: #666;
+    font-size: 14px;
+  }
+  
+  .date {
+    color: #999;
+    font-size: 12px;
+  }
+  
+  .edit-button {
+    margin-left: auto;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 15px;
+    cursor: pointer;
+  }
+  
+  /* CSS atualizado */
+ .sections {
+  display: flex;
+  flex-direction: column; /* Coloca as caixas empilhadas */
+  align-items: center; /* Centraliza horizontalmente */
+  margin: 0 auto; /* Garante que o container principal esteja centralizado */
+}
+
+  
+  .section {
+    width: 100%; /* Faz com que a seção ocupe 100% da largura disponível */
+    max-width: 1000px; /* Ajusta a largura máxima para esticar mais */
+    margin-bottom: 20px; /* Espaçamento entre as seções */
+  }
+  
+  .item {
+    width: 1100px; /* Define a largura fixa conforme o protótipo */
+    height: 135px; /* Define a altura fixa */
+    display: flex; /* Mantém os itens alinhados horizontalmente */
+    align-items: center; /* Centraliza verticalmente o conteúdo */
+    justify-content: space-between; /* Espaça o conteúdo horizontalmente */
+    background-color: #fff; /* Fundo branco */
+    padding: 20px; /* Adiciona espaçamento interno */
+    border-radius: 8px; /* Bordas arredondadas */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra para destaque */
+    margin: 10px auto; /* Espaçamento entre as caixas e centralização */
+  }
+  
+  
+  .item img {
+    width: 60px;
+    height: 60px;
+    border-radius: 4px;
+    margin-right: 15px; /* Adiciona espaço entre a imagem e o texto */
+  }
+  
+  .status {
+    font-size: 14px;
+    font-weight: bold;
+  }
+  
+  /* Cores para status */
+  .donated {
+    color: green;
+  }
+  
+  .in-review {
+    color: orange;
+  }
+  
+  .delivered {
+    color: blue;
+  }
+  
+  .unavailable {
+    color: red;
+  }

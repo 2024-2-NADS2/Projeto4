@@ -1,9 +1,22 @@
+
 /* Base para o layout */
+
+
+.character-image {
+    position: absolute; /* Posiciona a imagem fora do fluxo regular */
+    left: 23rem; /* Mantém a imagem alinhada à esquerda */
+    top: 15%; /* Ajusta a posição vertical da imagem, descendo-a 10% da altura do contêiner */
+    max-width: 20%; /* Ajuste para um tamanho proporcional */
+    height: auto;
+    max-height: 80vh;
+    object-fit: contain;
+  }
+
 .signup-page {
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 100vh;
+    height: 120vh;
     background: linear-gradient(90deg, #FFF9D3 50%, #2A6783 50%);
     font-family: Arial, sans-serif;
 }
@@ -109,3 +122,29 @@ input {
         width: 90%;
     }
 }
+
+.toggle-button {
+    background-color: #f0f0f0;
+    border: none;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    border-radius: 12px;
+  }
+  
+  .toggle-button.active {
+    background-color: #2a6783;
+    color: white;
+    border-radius: 12px;
+  }
+  
+  .toggle-button:not(.active):hover {
+    background-color: #dcdcdc;
+    border-radius: 12px;
+  }
+  
+  .toggle-button + .toggle-button {
+    margin-left: 10px;
+    border-radius: 12px;
+  }
+  

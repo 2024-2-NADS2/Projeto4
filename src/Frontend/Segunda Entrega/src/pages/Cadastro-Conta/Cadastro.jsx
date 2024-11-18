@@ -2,51 +2,63 @@ import React, { useState } from "react";
 import axios from "axios";
 import "./CadastroConta.css";
 
-function CadastroConta() {
-  const [nome, setNome] = useState("");
+const CadastroConta = () => {
   const [email, setEmail] = useState("");
   const [senha, setSenha] = useState("");
   const [cpf, setCpf] = useState("");
+  const [nome, setNome] = useState("");
   const [dataNascimento, setDataNascimento] = useState("");
   const [endereco, setEndereco] = useState("");
+  const [telefone, setTelefone] = useState(""); // Novo campo
+  const [formType, setFormType] = useState("doador"); // Estado para alternar entre "doador" e "empresa"
+
+  // Definindo estados para empresa
+  const [razaoSocial, setRazaoSocial] = useState(""); // Para armazenar a razão social
+  const [cnpj, setCnpj] = useState(""); // Para armazenar o CNPJ
 
   const handleSubmit = async (e) => {
     e.preventDefault();
 
-    // Formatar a data para o formato 'yyyy-MM-dd' (ISO 8601)
-    const formattedDate = new Date(dataNascimento);
-    const day = String(formattedDate.getDate()).padStart(2, "0"); // Adiciona zero à esquerda se o dia for menor que 10
-    const month = String(formattedDate.getMonth() + 1).padStart(2, "0"); // O mês começa do 0, então somamos 1
-    const year = formattedDate.getFullYear();
+    // Formatar a data para o formato dd/MM/yyyy
+    const [ano, mes, dia] = dataNascimento.split("-");  // Pega a data no formato yyyy-MM-dd
+    const formattedDataNascimento = `${dia}/${mes}/${ano}`; // Converte para dd/MM/yyyy
 
-    // Formata a data como dd/mm/yyyy
-    const formattedDateString = `${day}/${month}/${year}`;
+    let usuario = {};
 
-    // Aqui o código vai parar para depuração
-    
+    if (formType === "doador") {
+      usuario = {
+        Nome: nome,
+        Email: email,
+        Senha: senha,
+        Cpf: cpf,
+        Endereco: endereco,
+        Telefone: telefone, // Enviado para a API
+        DataNascimentoString: formattedDataNascimento, // Enviar a data formatada
+      };
+    } else {
+      usuario = {
+        RazaoSocial: razaoSocial,
+        Cnpj: cnpj,
+        Email: email,
+        Senha: senha,
+        Endereco: endereco,
+        Telefone: telefone,
+      };
+    }
+
     try {
       const response = await axios.post(
-        "https://localhost:7160/api/Usuario/cadastrar-doador",
-        {
-          nome: nome,
-          email: email,
-          senha: senha,
-          cpf: cpf,
-          dataNascimentoString: formattedDateString,
-          endereco: endereco,
-        }
+        "https://appsyp-hta3f0a6grhugmff.brazilsouth-01.azurewebsites.net/api/Usuario/cadastrar-doador",
+        usuario
       );
-      
-      if (response.status === 200) {
-        alert("Usuário cadastrado com sucesso!");
-      }
+      alert("Cadastro realizado com sucesso!");
     } catch (error) {
-      console.error(
-        "Erro ao cadastrar usuário:",
-        error.response ? error.response.data : error
-      );
-      alert("Erro ao cadastrar usuário. Tente novamente!");
-      debugger; // O código vai parar aqui, permitindo inspecionar as variáveis
+      if (error.response) {
+        // Exibe a mensagem de erro retornada pela API
+        alert(`Erro: ${error.response.data}`);
+      } else {
+        alert("Erro ao cadastrar. Tente novamente.");
+      }
     }
   };
 
@@ -54,9 +66,81 @@ function CadastroConta() {
     <div className="signup-page">
       <div className="signup-card">
         <h2>Seja bem-vindo(a)!</h2>
+        <div style={{ display: "flex", justifyContent: "center", marginBottom: "1rem" }}>
+          <button
+            type="button"
+            className={`toggle-button ${formType === "empresa" ? "active" : ""}`}
+            onClick={() => setFormType("empresa")}
+          >
+            Empresa
+          </button>
+          <button
+            type="button"
+            className={`toggle-button ${formType === "doador" ? "active" : ""}`}
+            onClick={() => setFormType("doador")}
+          >
+            Doador
+          </button>
+        </div>
         <form onSubmit={handleSubmit}>
+          {formType === "doador" ? (
+            <>
+              <label>
+                Nome Completo
+                <input
+                  type="text"
+                  placeholder="Nome Completo"
+                  required
+                  value={nome}
+                  onChange={(e) => setNome(e.target.value)}
+                />
+              </label>
+              <label>
+                CPF
+                <input
+                  type="text"
+                  placeholder="CPF"
+                  required
+                  value={cpf}
+                  onChange={(e) => setCpf(e.target.value)}
+                />
+              </label>
+              <label>
+                Data de Nascimento
+                <input
+                  type="date"
+                  required
+                  value={dataNascimento}
+                  onChange={(e) => setDataNascimento(e.target.value)}
+                />
+              </label>
+            </>
+          ) : (
+            <>
+              <label>
+                Razão Social
+                <input
+                  type="text"
+                  placeholder="Razão Social"
+                  required
+                  value={razaoSocial}
+                  onChange={(e) => setRazaoSocial(e.target.value)}
+                />
+              </label>
+              <label>
+                CNPJ
+                <input
+                  type="text"
+                  placeholder="CNPJ"
+                  required
+                  value={cnpj}
+                  onChange={(e) => setCnpj(e.target.value)}
+                />
+              </label>
+            </>
+          )}
           <label>
-            Digite seu e-mail
+            E-mail
             <input
               type="email"
               placeholder="E-mail"
@@ -66,45 +150,13 @@ function CadastroConta() {
             />
           </label>
           <label>
-            Crie sua senha
-            <div className="password-input">
-              <input
-                type="password"
-                placeholder="Senha"
-                required
-                value={senha}
-                onChange={(e) => setSenha(e.target.value)}
-              />
-              <span className="show-password">👁️</span>
-            </div>
-          </label>
-          <label>
-            CPF
+            Senha
             <input
-              type="text"
-              placeholder="CPF"
+              type="password"
+              placeholder="Senha"
               required
-              value={cpf}
-              onChange={(e) => setCpf(e.target.value)}
-            />
-          </label>
-          <label>
-            Nome Completo
-            <input
-              type="text"
-              placeholder="Nome Completo"
-              required
-              value={nome}
-              onChange={(e) => setNome(e.target.value)}
-            />
-          </label>
-          <label>
-            Data de Nascimento
-            <input
-              type="date"
-              required
-              value={dataNascimento}
-              onChange={(e) => setDataNascimento(e.target.value)}
+              value={senha}
+              onChange={(e) => setSenha(e.target.value)}
             />
           </label>
           <label>
@@ -117,16 +169,23 @@ function CadastroConta() {
               onChange={(e) => setEndereco(e.target.value)}
             />
           </label>
+          <label>
+            Telefone
+            <input
+              type="text"
+              placeholder="Telefone"
+              required
+              value={telefone}
+              onChange={(e) => setTelefone(e.target.value)}
+            />
+          </label>
           <button type="submit" className="signup-button">
             Cadastrar
-          </button>
-          <button type="button" className="google-signup">
-            Entrar com o Google
           </button>
         </form>
       </div>
     </div>
   );
-}
+};
 
 export default CadastroConta;

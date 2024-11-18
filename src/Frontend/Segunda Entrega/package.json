@@ -37,5 +37,6 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  }
+  },
+  "proxy": "https://appsyp-hta3f0a6grhugmff.brazilsouth-01.azurewebsites.net"
 }

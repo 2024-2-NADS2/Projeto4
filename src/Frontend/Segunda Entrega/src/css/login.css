@@ -1,11 +1,23 @@
 .login-page {
   display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 100vh; /* Garante que ocupe toda a tela */
+  align-items: center; /* Alinha verticalmente ao centro */
+  justify-content: center; /* Alinha horizontalmente ao centro como ponto de base */
+  height: 100vh;
   background: linear-gradient(90deg, #FFF9D3 50%, #2A6783 50%);
   font-family: Arial, sans-serif;
+  position: relative; /* Permite posicionar os elementos dentro */
 }
+
+.character-image {
+  position: absolute; /* Posiciona a imagem fora do fluxo regular */
+  left: 23rem; /* Mantém a imagem alinhada à esquerda */
+  top: 15%; /* Ajusta a posição vertical da imagem, descendo-a 10% da altura do contêiner */
+  max-width: 20%; /* Ajuste para um tamanho proporcional */
+  height: auto;
+  max-height: 80vh;
+  object-fit: contain;
+}
+
 
 .login-card {
   background-color: #ffffff;
@@ -15,7 +27,9 @@
   max-width: 400px;
   width: 100%;
   text-align: center;
+  z-index: 1; /* Garante que o card esteja acima da imagem, se necessário */
 }
+
 
 h2 {
   margin-bottom: 1rem;
@@ -37,6 +51,7 @@ h2 {
   color: #2a9d8f;
   text-decoration: none;
   margin-top: 5px; /* Espaçamento entre o texto e o link */
+  
 }
 }
 
@@ -120,7 +135,6 @@ input {
   transition: background-color 0.3s ease;
 
 }
-
 .google-login:hover {
   background-color: #f5f5f5;
 }
@@ -134,4 +148,9 @@ input {
   .login-card {
     width: 90%;
   }
+  
+  .google-icon {
+    width: 14px;
+    height: 14px;
+  }  
 }

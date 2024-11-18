@@ -8,6 +8,8 @@ import Contato from "./pages/Contato";
 import Cadastro from "./pages/Cadastro";
 import Footer from "./components/Footer";
 import Login from "./pages/Login";
+import PerfilUsuario from "./pages/Perfil-Usuario"; 
+import CadastroProduto from "./pages/CadastroProduto";
 import "./App.css";
 
 function App() {
@@ -22,6 +24,8 @@ function App() {
           <Route path="/contato" element={<Contato />} />
           <Route path="/cadastro" element={<Cadastro />} />
           <Route path="/login" element={<Login />} />
+          <Route path="/user-profile" element={<PerfilUsuario />} />  
+          <Route path="/cadastroproduto" element={<CadastroProduto />} /> 
         </Routes>
         <FooterWrapper />
       </div>
@@ -32,12 +36,15 @@ function App() {
 function NavbarWrapper() {
   const location = useLocation();
 
-  // Renderiza a Navbar apenas se não estiver na página de Cadastro
-  return location.pathname !== '/cadastro' ? <Navbar /> : null;
-  
+  // Renderiza a Navbar apenas se não estiver na página de Cadastro ou Login
+  return location.pathname !== '/cadastro' && location.pathname !== '/login' ? <Navbar /> : null;
 }
+
 function FooterWrapper() {
   const location = useLocation();
+  
+  // Renderiza o Footer apenas se não estiver na página de Contato
   return location.pathname !== '/contato' ? <Footer /> : null;
 }
+
 export default App;
