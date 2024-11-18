@@ -1,133 +1,224 @@
+/* Estilo geral para o body */
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f9f9f9;
-  }
-  
-  .header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 20px;
-    background-color: #ffefb3;
-  }
-  
-  .logo {
-    font-size: 24px;
-    font-weight: bold;
-  }
-  
-  .header nav a {
-    margin: 0 10px;
-    text-decoration: none;
-    color: #333;
-    font-weight: 500;
-  }
-  
-  .user-menu {
-    display: flex;
-    align-items: center;
-  }
-  
-  .user-avatar {
-    border-radius: 50%;
-    margin-left: 10px;
-    width: 40px;
-    height: 40px;
-  }
-  
-  .profile-card {
-    display: flex;
-    align-items: center;
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    margin: 0 auto;
-  }
-  
-  .profile-image {
-    border-radius: 50%;
-    width: 100px;
-    height: 100px;
-    margin-right: 20px;
-  }
-  
-  .role {
-    color: #666;
-    font-size: 14px;
-  }
-  
-  .date {
-    color: #999;
-    font-size: 12px;
-  }
-  
-  .edit-button {
-    margin-left: auto;
-    background-color: #007bff;
-    color: #fff;
-    border: none;
-    border-radius: 4px;
-    padding: 10px 15px;
-    cursor: pointer;
-  }
-  
-  /* CSS atualizado */
- .sections {
-  display: flex;
-  flex-direction: column; /* Coloca as caixas empilhadas */
-  align-items: center; /* Centraliza horizontalmente */
-  margin: 0 auto; /* Garante que o container principal esteja centralizado */
+  font-family: Arial, sans-serif; /* Define a fonte para Arial ou sans-serif se Arial não estiver disponível */
+  margin: 0; /* Remove as margens padrão */
+  padding: 0; /* Remove o padding padrão */
+  background-color: #f9f9f9; /* Define uma cor de fundo clara */
 }
 
-  
-  .section {
-    width: 100%; /* Faz com que a seção ocupe 100% da largura disponível */
-    max-width: 1000px; /* Ajusta a largura máxima para esticar mais */
-    margin-bottom: 20px; /* Espaçamento entre as seções */
+/* Estilo do cabeçalho (header) */
+.header {
+  display: flex; /* Usa o Flexbox para organizar o layout do cabeçalho */
+  justify-content: space-between; /* Distribui os itens entre as extremidades do cabeçalho */
+  align-items: center; /* Alinha verticalmente os itens ao centro */
+  padding: 10px 20px; /* Adiciona padding (espaçamento interno) nas laterais */
+  background-color: #ffefb3; /* Cor de fundo suave para o cabeçalho */
+  flex-wrap: wrap; /* Permite que os itens quebrem linha em telas menores */
+  text-align: center; /* Centraliza os itens em telas pequenas */
+}
+
+/* Estilo da barra de navegação (nav) */
+nav {
+  display: flex; /* Usa Flexbox para alinhar os itens na horizontal */
+  justify-content: center; /* Centraliza os itens de navegação */
+  flex-grow: 1; /* Faz com que o nav ocupe o máximo de espaço possível */
+}
+
+/* Estilo dos links dentro da navegação */
+nav a {
+  margin: 0 15px; /* Espaçamento entre os links */
+  text-decoration: none; /* Remove o sublinhado dos links */
+  color: #333; /* Define a cor do texto do link */
+  font-weight: 500; /* Define a espessura da fonte */
+}
+
+/* Estilo do logo */
+.logo {
+  font-size: 24px; /* Define o tamanho da fonte para o logo */
+  font-weight: bold; /* Deixa o logo em negrito */
+}
+
+/* Estilo do menu do usuário (com avatar e nome) */
+.user-menu {
+  display: flex; /* Organiza o nome do usuário e o avatar em linha */
+  align-items: center; /* Alinha os itens verticalmente */
+  margin-left: auto; /* Empurra o menu do usuário para a direita */
+}
+
+/* Estilo do avatar do usuário */
+.user-avatar {
+  border-radius: 50%; /* Torna o avatar redondo */
+  margin-left: 10px; /* Adiciona um pequeno espaçamento à esquerda do avatar */
+  width: 40px; /* Define a largura do avatar */
+  height: 40px; /* Define a altura do avatar */
+}
+
+/* Estilo do conteúdo principal */
+.main-content {
+  display: flex; /* Usa Flexbox para organizar os itens */
+  flex-direction: column; /* Organiza os itens de forma vertical */
+  justify-content: center; /* Centraliza os itens verticalmente */
+  align-items: center; /* Centraliza os itens horizontalmente */
+  min-height: calc(100vh - 120px); /* Define a altura mínima do conteúdo, subtraindo a altura do cabeçalho e rodapé */
+  padding: 20px 0; /* Adiciona espaçamento em cima e embaixo do conteúdo */
+}
+
+/* Estilo do cartão de perfil do usuário */
+.profile-card {
+  display: flex; /* Organiza os itens dentro do cartão em linha */
+  align-items: center; /* Alinha os itens verticalmente no centro */
+  justify-content: space-between; /* Distribui os itens entre as extremidades do cartão */
+  background-color: #fff; /* Cor de fundo branca para o cartão */
+  padding: 20px; /* Espaçamento interno */
+  border-radius: 8px; /* Bordas arredondadas */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra suave para dar profundidade */
+  margin: 20px auto; /* Margem automática para centralizar horizontalmente */
+  width: 1100px; /* Define a largura do cartão */
+  height: 135px; /* Define a altura do cartão */
+  margin-bottom: 40px; /* Adiciona um espaçamento inferior maior */
+}
+
+/* Estilo da imagem de perfil */
+.profile-image {
+  border-radius: 50%; /* Torna a imagem redonda */
+  width: 100px; /* Define o tamanho da imagem */
+  height: 100px; /* Define o tamanho da imagem */
+  margin-right: 20px; /* Adiciona espaçamento à direita da imagem */
+}
+
+/* Estilo para o papel do usuário (ex: "Doador") */
+.role {
+  color: #666; /* Cor do texto para indicar o papel do usuário */
+  font-size: 14px; /* Tamanho da fonte */
+}
+
+/* Estilo para a data de cadastro */
+.date {
+  color: #999; /* Cor do texto para a data */
+  font-size: 12px; /* Tamanho da fonte */
+}
+
+/* Estilo do botão de editar perfil */
+.edit-button {
+  margin-left: auto; /* Empurra o botão para a direita */
+  background-color: #007bff; /* Cor de fundo do botão */
+  color: #fff; /* Cor do texto do botão */
+  border: none; /* Remove a borda padrão */
+  border-radius: 4px; /* Bordas arredondadas */
+  padding: 10px 15px; /* Define o tamanho do botão */
+  cursor: pointer; /* Altera o cursor para uma mão ao passar sobre o botão */
+}
+
+/* Estilo das seções de itens (Itens doados, Meus Interesses, etc.) */
+.sections {
+  display: flex; /* Usa Flexbox para organizar as seções */
+  flex-direction: column; /* Organiza as seções de forma vertical */
+  align-items: flex-start; /* Alinha as seções à esquerda */
+  width: 100%; /* Largura total */
+  max-width: 1200px; /* Largura máxima controlada */
+  margin: 0 auto; /* Centraliza as seções */
+}
+
+/* Estilo de cada seção (Itens doados, Meus Interesses, etc.) */
+.section {
+  width: 100%; /* Largura total */
+  margin-bottom: 20px; /* Espaçamento entre as seções */
+}
+
+/* Estilo do título das seções */
+.section h3 {
+  text-align: left; /* Alinha o título à esquerda */
+  margin-top: 0; /* Remove a margem superior */
+  padding-top: 0; /* Remove o padding superior */
+  margin-left: 2rem; /* Adiciona um pequeno espaçamento à esquerda */
+}
+
+/* Estilo dos itens dentro de cada seção */
+.item {
+  width: 1100px; /* Largura controlada para centralização */
+  height: 135px; /* Altura do item */
+  display: flex; /* Organiza os itens dentro do card em linha */
+  align-items: center; /* Alinha os itens verticalmente */
+  justify-content: space-between; /* Distribui os itens entre as extremidades */
+  background-color: #fff; /* Cor de fundo branca */
+  padding: 20px; /* Adiciona espaçamento interno */
+  border-radius: 8px; /* Bordas arredondadas */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra suave para dar profundidade */
+  margin: 10px auto; /* Centraliza o item com margem automática */
+}
+
+/* Estilo das imagens dos itens */
+.item img {
+  width: 60px; /* Largura da imagem */
+  height: 60px; /* Altura da imagem */
+  border-radius: 4px; /* Bordas arredondadas */
+  margin-right: 15px; /* Adiciona espaçamento à direita da imagem */
+}
+
+/* Estilo do status dos itens */
+.status {
+  font-size: 14px; /* Tamanho da fonte */
+  font-weight: bold; /* Deixa o texto em negrito */
+}
+
+/* Cores para diferentes status de item */
+.donated {
+  color: green; /* Cor para itens doados */
+}
+
+.in-review {
+  color: orange; /* Cor para itens em análise */
+}
+
+.delivered {
+  color: blue; /* Cor para itens entregues */
+}
+
+.unavailable {
+  color: red; /* Cor para itens não disponíveis */
+}
+@media (max-width: 600px) {
+  .header {
+    flex-direction: column; /* Alinha os itens do cabeçalho em coluna */
+    text-align: center;
   }
-  
+
+  .logo {
+    margin-bottom: 10px; /* Adiciona um espaçamento abaixo do logo */
+  }
+
+  .profile-card {
+    flex-direction: column; /* Organiza os itens do cartão de perfil em coluna */
+    width: 90%; /* Ajusta a largura do cartão */
+    height: auto; /* Deixa a altura do cartão adaptável */
+  }
+
+  .profile-image {
+    margin-bottom: 10px; /* Adiciona espaçamento abaixo da imagem */
+  }
+
+  .sections {
+    width: 100%; /* Largura total para as seções */
+    padding: 10px; /* Adiciona padding nas seções */
+  }
+
   .item {
-    width: 1100px; /* Define a largura fixa conforme o protótipo */
-    height: 135px; /* Define a altura fixa */
-    display: flex; /* Mantém os itens alinhados horizontalmente */
-    align-items: center; /* Centraliza verticalmente o conteúdo */
-    justify-content: space-between; /* Espaça o conteúdo horizontalmente */
-    background-color: #fff; /* Fundo branco */
-    padding: 20px; /* Adiciona espaçamento interno */
-    border-radius: 8px; /* Bordas arredondadas */
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra para destaque */
-    margin: 10px auto; /* Espaçamento entre as caixas e centralização */
+    width: 100%; /* Largura total para os itens */
+    padding: 15px; /* Ajusta o padding dos itens */
   }
-  
-  
-  .item img {
-    width: 60px;
-    height: 60px;
-    border-radius: 4px;
-    margin-right: 15px; /* Adiciona espaço entre a imagem e o texto */
+}
+
+/* Telas médias (tablets) */
+@media (max-width: 900px) {
+  .header {
+    flex-wrap: wrap; /* Permite que o cabeçalho quebre linha em telas menores */
   }
-  
-  .status {
-    font-size: 14px;
-    font-weight: bold;
+
+  .profile-card {
+    width: 95%; /* Ajusta a largura para tablets */
   }
-  
-  /* Cores para status */
-  .donated {
-    color: green;
+
+  .item {
+    width: 95%; /* Ajusta a largura para tablets */
   }
-  
-  .in-review {
-    color: orange;
-  }
-  
-  .delivered {
-    color: blue;
-  }
-  
-  .unavailable {
-    color: red;
-  }
+}

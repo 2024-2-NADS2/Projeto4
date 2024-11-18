@@ -37,7 +37,7 @@ function NavbarWrapper() {
   const location = useLocation();
 
   // Renderiza a Navbar apenas se não estiver na página de Cadastro ou Login
-  return location.pathname !== '/cadastro' && location.pathname !== '/login' ? <Navbar /> : null;
+  return location.pathname !== '/cadastro' && location.pathname !== '/login' && location.pathname !== '/user-profile' ? <Navbar /> : null;
 }
 
 function FooterWrapper() {

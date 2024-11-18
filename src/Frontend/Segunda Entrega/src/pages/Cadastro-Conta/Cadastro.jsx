@@ -52,6 +52,7 @@ const CadastroConta = () => {
         usuario
       );
       alert("Cadastro realizado com sucesso!");
+      localStorage.setItem('nomeUsuario', nome); // Salva o nome do usuário
     } catch (error) {
       if (error.response) {
         // Exibe a mensagem de erro retornada pela API
