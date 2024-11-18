@@ -16,9 +16,9 @@ public class Doador : Usuario
         this.dataCadastro = DateTime.Now; // Define a data de cadastro como a data atual
         this.dataNascimentoString = dataNascimentoString;
     }
-
+    public Doador() { }
     // Propriedades públicas para acesso
-    public string Cpf { get => cpf; }
+    public string Cpf { get => cpf;  set => cpf = value; }
     public DateTime DataNascimento { get => dataNascimento; set => dataNascimento = value; }
     public DateTime DataCadastro { get => dataCadastro; set => dataCadastro = value; }
     public string DataNascimentoString { get => dataNascimentoString; set => dataNascimentoString = value; }

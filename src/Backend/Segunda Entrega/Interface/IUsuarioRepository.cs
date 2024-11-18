@@ -8,7 +8,7 @@ namespace ProjetoPI.Interface
         Task AdicionarUsuario(Usuario usuario);
         List<Usuario> GetAllUsuarios();
         Usuario GetUsuarioByEmailSenha(string email, string senha);
-        Usuario GetUsuarioById(int id);
+       Usuario GetUsuarioById(int id);
         int GetQuantidadeUsuarios(); 
     }
 

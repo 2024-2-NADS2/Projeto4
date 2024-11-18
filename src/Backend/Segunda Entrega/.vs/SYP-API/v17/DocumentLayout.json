@@ -3,44 +3,80 @@
   "WorkspaceRootPath": "C:\\Users\\erika\\OneDrive\\Documentos\\Backend 03-11\\Segunda Entrega\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{62FD98F3-F6DE-4BBC-8D19-563829A690CF}|ProjetoPI.csproj|c:\\users\\erika\\onedrive\\documentos\\backend 03-11\\segunda entrega\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{62FD98F3-F6DE-4BBC-8D19-563829A690CF}|ProjetoPI.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{62FD98F3-F6DE-4BBC-8D19-563829A690CF}|ProjetoPI.csproj|c:\\users\\erika\\onedrive\\documentos\\backend 03-11\\segunda entrega\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{62FD98F3-F6DE-4BBC-8D19-563829A690CF}|ProjetoPI.csproj|solutionrelative:properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{62FD98F3-F6DE-4BBC-8D19-563829A690CF}|ProjetoPI.csproj|c:\\users\\erika\\onedrive\\documentos\\backend 03-11\\segunda entrega\\model\\produto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{62FD98F3-F6DE-4BBC-8D19-563829A690CF}|ProjetoPI.csproj|solutionrelative:model\\produto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{62FD98F3-F6DE-4BBC-8D19-563829A690CF}|ProjetoPI.csproj|c:\\users\\erika\\onedrive\\documentos\\backend 03-11\\segunda entrega\\model\\calcado.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{62FD98F3-F6DE-4BBC-8D19-563829A690CF}|ProjetoPI.csproj|solutionrelative:model\\calcado.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{62FD98F3-F6DE-4BBC-8D19-563829A690CF}|ProjetoPI.csproj|c:\\users\\erika\\onedrive\\documentos\\backend 03-11\\segunda entrega\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{62FD98F3-F6DE-4BBC-8D19-563829A690CF}|ProjetoPI.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{62FD98F3-F6DE-4BBC-8D19-563829A690CF}|ProjetoPI.csproj|c:\\users\\erika\\onedrive\\documentos\\backend 03-11\\segunda entrega\\controllers\\produtocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{62FD98F3-F6DE-4BBC-8D19-563829A690CF}|ProjetoPI.csproj|solutionrelative:controllers\\produtocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{62FD98F3-F6DE-4BBC-8D19-563829A690CF}|ProjetoPI.csproj|c:\\users\\erika\\onedrive\\documentos\\backend 03-11\\segunda entrega\\model\\roupa.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{62FD98F3-F6DE-4BBC-8D19-563829A690CF}|ProjetoPI.csproj|solutionrelative:model\\roupa.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{62FD98F3-F6DE-4BBC-8D19-563829A690CF}|ProjetoPI.csproj|c:\\users\\erika\\onedrive\\documentos\\backend 03-11\\segunda entrega\\migrations\\applicationdbcontextmodelsnapshot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{62FD98F3-F6DE-4BBC-8D19-563829A690CF}|ProjetoPI.csproj|solutionrelative:migrations\\applicationdbcontextmodelsnapshot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{62FD98F3-F6DE-4BBC-8D19-563829A690CF}|ProjetoPI.csproj|c:\\users\\erika\\onedrive\\documentos\\backend 03-11\\segunda entrega\\repository\\produtorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{62FD98F3-F6DE-4BBC-8D19-563829A690CF}|ProjetoPI.csproj|solutionrelative:repository\\produtorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{62FD98F3-F6DE-4BBC-8D19-563829A690CF}|ProjetoPI.csproj|c:\\users\\erika\\onedrive\\documentos\\backend 03-11\\segunda entrega\\service\\produtoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{62FD98F3-F6DE-4BBC-8D19-563829A690CF}|ProjetoPI.csproj|solutionrelative:service\\produtoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{62FD98F3-F6DE-4BBC-8D19-563829A690CF}|ProjetoPI.csproj|c:\\users\\erika\\onedrive\\documentos\\backend 03-11\\segunda entrega\\interface\\iprodutoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{62FD98F3-F6DE-4BBC-8D19-563829A690CF}|ProjetoPI.csproj|solutionrelative:interface\\iprodutoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{62FD98F3-F6DE-4BBC-8D19-563829A690CF}|ProjetoPI.csproj|c:\\users\\erika\\onedrive\\documentos\\backend 03-11\\segunda entrega\\controllers\\produtocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{62FD98F3-F6DE-4BBC-8D19-563829A690CF}|ProjetoPI.csproj|solutionrelative:controllers\\produtocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{62FD98F3-F6DE-4BBC-8D19-563829A690CF}|ProjetoPI.csproj|c:\\users\\erika\\onedrive\\documentos\\backend 03-11\\segunda entrega\\dto\\roupadto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{62FD98F3-F6DE-4BBC-8D19-563829A690CF}|ProjetoPI.csproj|solutionrelative:dto\\roupadto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{62FD98F3-F6DE-4BBC-8D19-563829A690CF}|ProjetoPI.csproj|c:\\users\\erika\\onedrive\\documentos\\backend 03-11\\segunda entrega\\interface\\iprodutorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{62FD98F3-F6DE-4BBC-8D19-563829A690CF}|ProjetoPI.csproj|solutionrelative:interface\\iprodutorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{62FD98F3-F6DE-4BBC-8D19-563829A690CF}|ProjetoPI.csproj|c:\\users\\erika\\onedrive\\documentos\\backend 03-11\\segunda entrega\\dto\\livrodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{62FD98F3-F6DE-4BBC-8D19-563829A690CF}|ProjetoPI.csproj|solutionrelative:dto\\livrodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{62FD98F3-F6DE-4BBC-8D19-563829A690CF}|ProjetoPI.csproj|c:\\users\\erika\\onedrive\\documentos\\backend 03-11\\segunda entrega\\model\\livro.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{62FD98F3-F6DE-4BBC-8D19-563829A690CF}|ProjetoPI.csproj|solutionrelative:model\\livro.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{62FD98F3-F6DE-4BBC-8D19-563829A690CF}|ProjetoPI.csproj|c:\\users\\erika\\onedrive\\documentos\\backend 03-11\\segunda entrega\\model\\usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{62FD98F3-F6DE-4BBC-8D19-563829A690CF}|ProjetoPI.csproj|solutionrelative:model\\usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{62FD98F3-F6DE-4BBC-8D19-563829A690CF}|ProjetoPI.csproj|c:\\users\\erika\\onedrive\\documentos\\backend 03-11\\segunda entrega\\controllers\\usuariocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{62FD98F3-F6DE-4BBC-8D19-563829A690CF}|ProjetoPI.csproj|solutionrelative:controllers\\usuariocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{62FD98F3-F6DE-4BBC-8D19-563829A690CF}|ProjetoPI.csproj|c:\\users\\erika\\onedrive\\documentos\\backend 03-11\\segunda entrega\\repository\\usuariorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{62FD98F3-F6DE-4BBC-8D19-563829A690CF}|ProjetoPI.csproj|solutionrelative:repository\\usuariorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{62FD98F3-F6DE-4BBC-8D19-563829A690CF}|ProjetoPI.csproj|c:\\users\\erika\\onedrive\\documentos\\backend 03-11\\segunda entrega\\enum\\estadoitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{62FD98F3-F6DE-4BBC-8D19-563829A690CF}|ProjetoPI.csproj|solutionrelative:enum\\estadoitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{62FD98F3-F6DE-4BBC-8D19-563829A690CF}|ProjetoPI.csproj|c:\\users\\erika\\onedrive\\documentos\\backend 03-11\\segunda entrega\\filters\\fileuploadoperationfilter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{62FD98F3-F6DE-4BBC-8D19-563829A690CF}|ProjetoPI.csproj|solutionrelative:filters\\fileuploadoperationfilter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{62FD98F3-F6DE-4BBC-8D19-563829A690CF}|ProjetoPI.csproj|c:\\users\\erika\\onedrive\\documentos\\backend 03-11\\segunda entrega\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{62FD98F3-F6DE-4BBC-8D19-563829A690CF}|ProjetoPI.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{62FD98F3-F6DE-4BBC-8D19-563829A690CF}|ProjetoPI.csproj|c:\\users\\erika\\onedrive\\documentos\\backend 03-11\\segunda entrega\\interface\\iprodutoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{62FD98F3-F6DE-4BBC-8D19-563829A690CF}|ProjetoPI.csproj|solutionrelative:interface\\iprodutoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{62FD98F3-F6DE-4BBC-8D19-563829A690CF}|ProjetoPI.csproj|c:\\users\\erika\\onedrive\\documentos\\backend 03-11\\segunda entrega\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{62FD98F3-F6DE-4BBC-8D19-563829A690CF}|ProjetoPI.csproj|solutionrelative:data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{62FD98F3-F6DE-4BBC-8D19-563829A690CF}|ProjetoPI.csproj|c:\\users\\erika\\onedrive\\documentos\\backend 03-11\\segunda entrega\\service\\ongservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{62FD98F3-F6DE-4BBC-8D19-563829A690CF}|ProjetoPI.csproj|solutionrelative:service\\ongservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{62FD98F3-F6DE-4BBC-8D19-563829A690CF}|ProjetoPI.csproj|c:\\users\\erika\\onedrive\\documentos\\backend 03-11\\segunda entrega\\service\\usuarioservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -51,44 +87,24 @@
       "RelativeMoniker": "D:0:0:{62FD98F3-F6DE-4BBC-8D19-563829A690CF}|ProjetoPI.csproj|solutionrelative:interface\\iusuariorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{62FD98F3-F6DE-4BBC-8D19-563829A690CF}|ProjetoPI.csproj|c:\\users\\erika\\onedrive\\documentos\\backend 03-11\\segunda entrega\\interface\\iprodutorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{62FD98F3-F6DE-4BBC-8D19-563829A690CF}|ProjetoPI.csproj|solutionrelative:interface\\iprodutorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{62FD98F3-F6DE-4BBC-8D19-563829A690CF}|ProjetoPI.csproj|c:\\users\\erika\\onedrive\\documentos\\backend 03-11\\segunda entrega\\interface\\iusuarioservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{62FD98F3-F6DE-4BBC-8D19-563829A690CF}|ProjetoPI.csproj|solutionrelative:interface\\iusuarioservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{62FD98F3-F6DE-4BBC-8D19-563829A690CF}|ProjetoPI.csproj|c:\\users\\erika\\onedrive\\documentos\\backend 03-11\\segunda entrega\\model\\ong.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{62FD98F3-F6DE-4BBC-8D19-563829A690CF}|ProjetoPI.csproj|solutionrelative:model\\ong.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{62FD98F3-F6DE-4BBC-8D19-563829A690CF}|ProjetoPI.csproj|c:\\users\\erika\\onedrive\\documentos\\backend 03-11\\segunda entrega\\projetopi.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}",
+      "RelativeMoniker": "D:0:0:{62FD98F3-F6DE-4BBC-8D19-563829A690CF}|ProjetoPI.csproj|solutionrelative:projetopi.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{62FD98F3-F6DE-4BBC-8D19-563829A690CF}|ProjetoPI.csproj|c:\\users\\erika\\onedrive\\documentos\\backend 03-11\\segunda entrega\\dto\\produtodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{62FD98F3-F6DE-4BBC-8D19-563829A690CF}|ProjetoPI.csproj|solutionrelative:dto\\produtodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{62FD98F3-F6DE-4BBC-8D19-563829A690CF}|ProjetoPI.csproj|c:\\users\\erika\\onedrive\\documentos\\backend 03-11\\segunda entrega\\model\\roupa.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{62FD98F3-F6DE-4BBC-8D19-563829A690CF}|ProjetoPI.csproj|solutionrelative:model\\roupa.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{62FD98F3-F6DE-4BBC-8D19-563829A690CF}|ProjetoPI.csproj|c:\\users\\erika\\onedrive\\documentos\\backend 03-11\\segunda entrega\\repository\\produtorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{62FD98F3-F6DE-4BBC-8D19-563829A690CF}|ProjetoPI.csproj|solutionrelative:repository\\produtorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{62FD98F3-F6DE-4BBC-8D19-563829A690CF}|ProjetoPI.csproj|c:\\users\\erika\\onedrive\\documentos\\backend 03-11\\segunda entrega\\repository\\doadorrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{62FD98F3-F6DE-4BBC-8D19-563829A690CF}|ProjetoPI.csproj|solutionrelative:repository\\doadorrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{62FD98F3-F6DE-4BBC-8D19-563829A690CF}|ProjetoPI.csproj|c:\\users\\erika\\onedrive\\documentos\\backend 03-11\\segunda entrega\\service\\doadorservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{62FD98F3-F6DE-4BBC-8D19-563829A690CF}|ProjetoPI.csproj|solutionrelative:service\\doadorservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{62FD98F3-F6DE-4BBC-8D19-563829A690CF}|ProjetoPI.csproj|c:\\users\\erika\\onedrive\\documentos\\backend 03-11\\segunda entrega\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{62FD98F3-F6DE-4BBC-8D19-563829A690CF}|ProjetoPI.csproj|solutionrelative:data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{62FD98F3-F6DE-4BBC-8D19-563829A690CF}|ProjetoPI.csproj|c:\\users\\erika\\onedrive\\documentos\\backend 03-11\\segunda entrega\\repository\\ongrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{62FD98F3-F6DE-4BBC-8D19-563829A690CF}|ProjetoPI.csproj|solutionrelative:repository\\ongrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{62FD98F3-F6DE-4BBC-8D19-563829A690CF}|ProjetoPI.csproj|c:\\users\\erika\\onedrive\\documentos\\backend 03-11\\segunda entrega\\controllers\\usuariocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{62FD98F3-F6DE-4BBC-8D19-563829A690CF}|ProjetoPI.csproj|solutionrelative:controllers\\usuariocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{62FD98F3-F6DE-4BBC-8D19-563829A690CF}|ProjetoPI.csproj|c:\\users\\erika\\onedrive\\documentos\\backend 03-11\\segunda entrega\\enum\\tipo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{62FD98F3-F6DE-4BBC-8D19-563829A690CF}|ProjetoPI.csproj|solutionrelative:enum\\tipo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{62FD98F3-F6DE-4BBC-8D19-563829A690CF}|ProjetoPI.csproj|c:\\users\\erika\\onedrive\\documentos\\backend 03-11\\segunda entrega\\projetopi.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{62FD98F3-F6DE-4BBC-8D19-563829A690CF}|ProjetoPI.csproj|solutionrelative:projetopi.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     }
   ],
   "DocumentGroupContainers": [
@@ -98,137 +114,95 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 6,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "ProdutoService.cs",
-              "DocumentMoniker": "C:\\Users\\erika\\OneDrive\\Documentos\\Backend 03-11\\Segunda Entrega\\Service\\ProdutoService.cs",
-              "RelativeDocumentMoniker": "Service\\ProdutoService.cs",
-              "ToolTip": "C:\\Users\\erika\\OneDrive\\Documentos\\Backend 03-11\\Segunda Entrega\\Service\\ProdutoService.cs",
-              "RelativeToolTip": "Service\\ProdutoService.cs",
-              "ViewState": "AgIAACkAAAAAAAAAAAAwwEcAAAAEAAAAAAAAAA==",
+              "DocumentIndex": 4,
+              "Title": "Roupa.cs",
+              "DocumentMoniker": "C:\\Users\\erika\\OneDrive\\Documentos\\Backend 03-11\\Segunda Entrega\\Model\\Roupa.cs",
+              "RelativeDocumentMoniker": "Model\\Roupa.cs",
+              "ToolTip": "C:\\Users\\erika\\OneDrive\\Documentos\\Backend 03-11\\Segunda Entrega\\Model\\Roupa.cs",
+              "RelativeToolTip": "Model\\Roupa.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAjAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-06T01:14:12.649Z",
+              "WhenOpened": "2024-11-17T01:26:54.773Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "ProdutoController.cs",
-              "DocumentMoniker": "C:\\Users\\erika\\OneDrive\\Documentos\\Backend 03-11\\Segunda Entrega\\Controllers\\ProdutoController.cs",
-              "RelativeDocumentMoniker": "Controllers\\ProdutoController.cs",
-              "ToolTip": "C:\\Users\\erika\\OneDrive\\Documentos\\Backend 03-11\\Segunda Entrega\\Controllers\\ProdutoController.cs",
-              "RelativeToolTip": "Controllers\\ProdutoController.cs",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAUwCEAAAAEAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-06T01:44:05.56Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\erika\\OneDrive\\Documentos\\Backend 03-11\\Segunda Entrega\\Program.cs",
-              "RelativeDocumentMoniker": "Program.cs",
-              "ToolTip": "C:\\Users\\erika\\OneDrive\\Documentos\\Backend 03-11\\Segunda Entrega\\Program.cs",
-              "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAABIAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-06T01:08:48.125Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "UsuarioService.cs",
-              "DocumentMoniker": "C:\\Users\\erika\\OneDrive\\Documentos\\Backend 03-11\\Segunda Entrega\\Service\\UsuarioService.cs",
-              "RelativeDocumentMoniker": "Service\\UsuarioService.cs",
-              "ToolTip": "C:\\Users\\erika\\OneDrive\\Documentos\\Backend 03-11\\Segunda Entrega\\Service\\UsuarioService.cs",
-              "RelativeToolTip": "Service\\UsuarioService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-06T01:17:20.076Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "UsuarioRepository.cs",
-              "DocumentMoniker": "C:\\Users\\erika\\OneDrive\\Documentos\\Backend 03-11\\Segunda Entrega\\Repository\\UsuarioRepository.cs",
-              "RelativeDocumentMoniker": "Repository\\UsuarioRepository.cs",
-              "ToolTip": "C:\\Users\\erika\\OneDrive\\Documentos\\Backend 03-11\\Segunda Entrega\\Repository\\UsuarioRepository.cs",
-              "RelativeToolTip": "Repository\\UsuarioRepository.cs",
-              "ViewState": "AgIAAB0AAAAAAAAAAAD4vzAAAAAEAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-06T01:30:27.551Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Livro.cs",
-              "DocumentMoniker": "C:\\Users\\erika\\OneDrive\\Documentos\\Backend 03-11\\Segunda Entrega\\Model\\Livro.cs",
-              "RelativeDocumentMoniker": "Model\\Livro.cs",
-              "ToolTip": "C:\\Users\\erika\\OneDrive\\Documentos\\Backend 03-11\\Segunda Entrega\\Model\\Livro.cs",
-              "RelativeToolTip": "Model\\Livro.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAcAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-12T23:02:20.244Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
               "Title": "Produto.cs",
               "DocumentMoniker": "C:\\Users\\erika\\OneDrive\\Documentos\\Backend 03-11\\Segunda Entrega\\Model\\Produto.cs",
               "RelativeDocumentMoniker": "Model\\Produto.cs",
               "ToolTip": "C:\\Users\\erika\\OneDrive\\Documentos\\Backend 03-11\\Segunda Entrega\\Model\\Produto.cs",
               "RelativeToolTip": "Model\\Produto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAeAAAAAAAAAA==",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAUwBEAAABEAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-06T01:11:20.198Z",
+              "WhenOpened": "2024-11-17T19:35:10.966Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\erika\\OneDrive\\Documentos\\Backend 03-11\\Segunda Entrega\\appsettings.json",
+              "RelativeDocumentMoniker": "appsettings.json",
+              "ToolTip": "C:\\Users\\erika\\OneDrive\\Documentos\\Backend 03-11\\Segunda Entrega\\appsettings.json",
+              "RelativeToolTip": "appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAABsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-11-17T01:42:00.405Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\erika\\OneDrive\\Documentos\\Backend 03-11\\Segunda Entrega\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\erika\\OneDrive\\Documentos\\Backend 03-11\\Segunda Entrega\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAAAB4AAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-17T01:34:58.87Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 6,
-              "Title": "EstadoItem.cs",
-              "DocumentMoniker": "C:\\Users\\erika\\OneDrive\\Documentos\\Backend 03-11\\Segunda Entrega\\Enum\\EstadoItem.cs",
-              "RelativeDocumentMoniker": "Enum\\EstadoItem.cs",
-              "ToolTip": "C:\\Users\\erika\\OneDrive\\Documentos\\Backend 03-11\\Segunda Entrega\\Enum\\EstadoItem.cs",
-              "RelativeToolTip": "Enum\\EstadoItem.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Title": "ProdutoRepository.cs",
+              "DocumentMoniker": "C:\\Users\\erika\\OneDrive\\Documentos\\Backend 03-11\\Segunda Entrega\\Repository\\ProdutoRepository.cs",
+              "RelativeDocumentMoniker": "Repository\\ProdutoRepository.cs",
+              "ToolTip": "C:\\Users\\erika\\OneDrive\\Documentos\\Backend 03-11\\Segunda Entrega\\Repository\\ProdutoRepository.cs",
+              "RelativeToolTip": "Repository\\ProdutoRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAQAAAAtAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-12T23:25:55.164Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-17T19:58:14.008Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "Calcado.cs",
-              "DocumentMoniker": "C:\\Users\\erika\\OneDrive\\Documentos\\Backend 03-11\\Segunda Entrega\\Model\\Calcado.cs",
-              "RelativeDocumentMoniker": "Model\\Calcado.cs",
-              "ToolTip": "C:\\Users\\erika\\OneDrive\\Documentos\\Backend 03-11\\Segunda Entrega\\Model\\Calcado.cs",
-              "RelativeToolTip": "Model\\Calcado.cs",
-              "ViewState": "AgIAAAgAAAAAAAAAAAD4vxkAAAAgAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-07T21:08:33.632Z",
+              "Title": "launchSettings.json",
+              "DocumentMoniker": "C:\\Users\\erika\\OneDrive\\Documentos\\Backend 03-11\\Segunda Entrega\\Properties\\launchSettings.json",
+              "RelativeDocumentMoniker": "Properties\\launchSettings.json",
+              "ToolTip": "C:\\Users\\erika\\OneDrive\\Documentos\\Backend 03-11\\Segunda Entrega\\Properties\\launchSettings.json",
+              "RelativeToolTip": "Properties\\launchSettings.json",
+              "ViewState": "AgIAABUAAAAAAAAAAAAuwCkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-11-17T01:35:55.091Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "ApplicationDbContext.cs",
-              "DocumentMoniker": "C:\\Users\\erika\\OneDrive\\Documentos\\Backend 03-11\\Segunda Entrega\\Data\\ApplicationDbContext.cs",
-              "RelativeDocumentMoniker": "Data\\ApplicationDbContext.cs",
-              "ToolTip": "C:\\Users\\erika\\OneDrive\\Documentos\\Backend 03-11\\Segunda Entrega\\Data\\ApplicationDbContext.cs",
-              "RelativeToolTip": "Data\\ApplicationDbContext.cs",
-              "ViewState": "AgIAABAAAAAAAAAAAAAAwBkAAAAMAAAAAAAAAA==",
+              "DocumentIndex": 5,
+              "Title": "ApplicationDbContextModelSnapshot.cs",
+              "DocumentMoniker": "C:\\Users\\erika\\OneDrive\\Documentos\\Backend 03-11\\Segunda Entrega\\Migrations\\ApplicationDbContextModelSnapshot.cs",
+              "RelativeDocumentMoniker": "Migrations\\ApplicationDbContextModelSnapshot.cs",
+              "ToolTip": "C:\\Users\\erika\\OneDrive\\Documentos\\Backend 03-11\\Segunda Entrega\\Migrations\\ApplicationDbContextModelSnapshot.cs",
+              "RelativeToolTip": "Migrations\\ApplicationDbContextModelSnapshot.cs",
+              "ViewState": "AgIAAMgAAAAAAAAAAAAAwNkAAAARAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-06T01:04:15.853Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-18T00:50:42.382Z"
             },
             {
               "$type": "Document",
@@ -238,143 +212,232 @@
               "RelativeDocumentMoniker": "Interface\\IProdutoService.cs",
               "ToolTip": "C:\\Users\\erika\\OneDrive\\Documentos\\Backend 03-11\\Segunda Entrega\\Interface\\IProdutoService.cs",
               "RelativeToolTip": "Interface\\IProdutoService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAYAAAAQAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAoAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-06T01:16:58.466Z",
+              "WhenOpened": "2024-11-17T22:29:18.628Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "RoupaDTO.cs",
+              "DocumentMoniker": "C:\\Users\\erika\\OneDrive\\Documentos\\Backend 03-11\\Segunda Entrega\\DTO\\RoupaDTO.cs",
+              "RelativeDocumentMoniker": "DTO\\RoupaDTO.cs",
+              "ToolTip": "C:\\Users\\erika\\OneDrive\\Documentos\\Backend 03-11\\Segunda Entrega\\DTO\\RoupaDTO.cs",
+              "RelativeToolTip": "DTO\\RoupaDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-18T00:45:49.231Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "IUsuarioRepository.cs",
-              "DocumentMoniker": "C:\\Users\\erika\\OneDrive\\Documentos\\Backend 03-11\\Segunda Entrega\\Interface\\IUsuarioRepository.cs",
-              "RelativeDocumentMoniker": "Interface\\IUsuarioRepository.cs",
-              "ToolTip": "C:\\Users\\erika\\OneDrive\\Documentos\\Backend 03-11\\Segunda Entrega\\Interface\\IUsuarioRepository.cs",
-              "RelativeToolTip": "Interface\\IUsuarioRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAnAAAAAAAAAA==",
+              "DocumentIndex": 7,
+              "Title": "ProdutoService.cs",
+              "DocumentMoniker": "C:\\Users\\erika\\OneDrive\\Documentos\\Backend 03-11\\Segunda Entrega\\Service\\ProdutoService.cs",
+              "RelativeDocumentMoniker": "Service\\ProdutoService.cs",
+              "ToolTip": "C:\\Users\\erika\\OneDrive\\Documentos\\Backend 03-11\\Segunda Entrega\\Service\\ProdutoService.cs",
+              "RelativeToolTip": "Service\\ProdutoService.cs",
+              "ViewState": "AgIAACgAAAAAAAAAAAAgwAQAAAAtAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-06T01:25:56.382Z",
+              "WhenOpened": "2024-11-18T00:58:04.8Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 12,
+              "Title": "LivroDTO.cs",
+              "DocumentMoniker": "C:\\Users\\erika\\OneDrive\\Documentos\\Backend 03-11\\Segunda Entrega\\DTO\\LivroDTO.cs",
+              "RelativeDocumentMoniker": "DTO\\LivroDTO.cs",
+              "ToolTip": "C:\\Users\\erika\\OneDrive\\Documentos\\Backend 03-11\\Segunda Entrega\\DTO\\LivroDTO.cs",
+              "RelativeToolTip": "DTO\\LivroDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-18T00:42:12.237Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "ProdutoController.cs",
+              "DocumentMoniker": "C:\\Users\\erika\\OneDrive\\Documentos\\Backend 03-11\\Segunda Entrega\\Controllers\\ProdutoController.cs",
+              "RelativeDocumentMoniker": "Controllers\\ProdutoController.cs",
+              "ToolTip": "C:\\Users\\erika\\OneDrive\\Documentos\\Backend 03-11\\Segunda Entrega\\Controllers\\ProdutoController.cs",
+              "RelativeToolTip": "Controllers\\ProdutoController.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAuwBYAAABIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-17T01:26:47.353Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
               "Title": "IProdutoRepository.cs",
               "DocumentMoniker": "C:\\Users\\erika\\OneDrive\\Documentos\\Backend 03-11\\Segunda Entrega\\Interface\\IProdutoRepository.cs",
               "RelativeDocumentMoniker": "Interface\\IProdutoRepository.cs",
               "ToolTip": "C:\\Users\\erika\\OneDrive\\Documentos\\Backend 03-11\\Segunda Entrega\\Interface\\IProdutoRepository.cs",
               "RelativeToolTip": "Interface\\IProdutoRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAIAAAAOAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-06T01:25:45.931Z"
+              "WhenOpened": "2024-11-18T00:38:14.632Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 13,
-              "Title": "Ong.cs",
-              "DocumentMoniker": "C:\\Users\\erika\\OneDrive\\Documentos\\Backend 03-11\\Segunda Entrega\\Model\\Ong.cs",
-              "RelativeDocumentMoniker": "Model\\Ong.cs",
-              "ToolTip": "C:\\Users\\erika\\OneDrive\\Documentos\\Backend 03-11\\Segunda Entrega\\Model\\Ong.cs",
-              "RelativeToolTip": "Model\\Ong.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Title": "Livro.cs",
+              "DocumentMoniker": "C:\\Users\\erika\\OneDrive\\Documentos\\Backend 03-11\\Segunda Entrega\\Model\\Livro.cs",
+              "RelativeDocumentMoniker": "Model\\Livro.cs",
+              "ToolTip": "C:\\Users\\erika\\OneDrive\\Documentos\\Backend 03-11\\Segunda Entrega\\Model\\Livro.cs",
+              "RelativeToolTip": "Model\\Livro.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-06T01:15:35.065Z"
+              "WhenOpened": "2024-11-17T16:42:48.392Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 14,
-              "Title": "ProdutoDTO.cs",
-              "DocumentMoniker": "C:\\Users\\erika\\OneDrive\\Documentos\\Backend 03-11\\Segunda Entrega\\DTO\\ProdutoDTO.cs",
-              "RelativeDocumentMoniker": "DTO\\ProdutoDTO.cs",
-              "ToolTip": "C:\\Users\\erika\\OneDrive\\Documentos\\Backend 03-11\\Segunda Entrega\\DTO\\ProdutoDTO.cs",
-              "RelativeToolTip": "DTO\\ProdutoDTO.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAArAAAAAAAAAA==",
+              "Title": "Usuario.cs",
+              "DocumentMoniker": "C:\\Users\\erika\\OneDrive\\Documentos\\Backend 03-11\\Segunda Entrega\\Model\\Usuario.cs",
+              "RelativeDocumentMoniker": "Model\\Usuario.cs",
+              "ToolTip": "C:\\Users\\erika\\OneDrive\\Documentos\\Backend 03-11\\Segunda Entrega\\Model\\Usuario.cs",
+              "RelativeToolTip": "Model\\Usuario.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAYwAwAAAAdAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-07T22:12:05.739Z"
+              "WhenOpened": "2024-11-17T01:26:55.789Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 15,
-              "Title": "Roupa.cs",
-              "DocumentMoniker": "C:\\Users\\erika\\OneDrive\\Documentos\\Backend 03-11\\Segunda Entrega\\Model\\Roupa.cs",
-              "RelativeDocumentMoniker": "Model\\Roupa.cs",
-              "ToolTip": "C:\\Users\\erika\\OneDrive\\Documentos\\Backend 03-11\\Segunda Entrega\\Model\\Roupa.cs",
-              "RelativeToolTip": "Model\\Roupa.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-07T20:52:16.401Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "ProdutoRepository.cs",
-              "DocumentMoniker": "C:\\Users\\erika\\OneDrive\\Documentos\\Backend 03-11\\Segunda Entrega\\Repository\\ProdutoRepository.cs",
-              "RelativeDocumentMoniker": "Repository\\ProdutoRepository.cs",
-              "ToolTip": "C:\\Users\\erika\\OneDrive\\Documentos\\Backend 03-11\\Segunda Entrega\\Repository\\ProdutoRepository.cs",
-              "RelativeToolTip": "Repository\\ProdutoRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAIAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-06T01:18:59.209Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 17,
-              "Title": "DoadorRepository.cs",
-              "DocumentMoniker": "C:\\Users\\erika\\OneDrive\\Documentos\\Backend 03-11\\Segunda Entrega\\Repository\\DoadorRepository.cs",
-              "RelativeDocumentMoniker": "Repository\\DoadorRepository.cs",
-              "ToolTip": "C:\\Users\\erika\\OneDrive\\Documentos\\Backend 03-11\\Segunda Entrega\\Repository\\DoadorRepository.cs",
-              "RelativeToolTip": "Repository\\DoadorRepository.cs",
-              "ViewState": "AgIAABAAAAAAAAAAAAAqwCQAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-06T01:28:10.839Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 18,
-              "Title": "DoadorService.cs",
-              "DocumentMoniker": "C:\\Users\\erika\\OneDrive\\Documentos\\Backend 03-11\\Segunda Entrega\\Service\\DoadorService.cs",
-              "RelativeDocumentMoniker": "Service\\DoadorService.cs",
-              "ToolTip": "C:\\Users\\erika\\OneDrive\\Documentos\\Backend 03-11\\Segunda Entrega\\Service\\DoadorService.cs",
-              "RelativeToolTip": "Service\\DoadorService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-06T01:14:21.836Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 19,
-              "Title": "OngRepository.cs",
-              "DocumentMoniker": "C:\\Users\\erika\\OneDrive\\Documentos\\Backend 03-11\\Segunda Entrega\\Repository\\OngRepository.cs",
-              "RelativeDocumentMoniker": "Repository\\OngRepository.cs",
-              "ToolTip": "C:\\Users\\erika\\OneDrive\\Documentos\\Backend 03-11\\Segunda Entrega\\Repository\\OngRepository.cs",
-              "RelativeToolTip": "Repository\\OngRepository.cs",
-              "ViewState": "AgIAAA8AAAAAAAAAAAAUwCQAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-06T01:05:17.608Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 20,
               "Title": "UsuarioController.cs",
               "DocumentMoniker": "C:\\Users\\erika\\OneDrive\\Documentos\\Backend 03-11\\Segunda Entrega\\Controllers\\UsuarioController.cs",
               "RelativeDocumentMoniker": "Controllers\\UsuarioController.cs",
               "ToolTip": "C:\\Users\\erika\\OneDrive\\Documentos\\Backend 03-11\\Segunda Entrega\\Controllers\\UsuarioController.cs",
               "RelativeToolTip": "Controllers\\UsuarioController.cs",
-              "ViewState": "AgIAAGkAAAAAAAAAAAAqwHEAAAAJAAAAAAAAAA==",
+              "ViewState": "AgIAAJUAAAAAAAAAAAAUwKIAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-06T00:57:27.242Z"
+              "WhenOpened": "2024-11-17T22:24:25.308Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "UsuarioRepository.cs",
+              "DocumentMoniker": "C:\\Users\\erika\\OneDrive\\Documentos\\Backend 03-11\\Segunda Entrega\\Repository\\UsuarioRepository.cs",
+              "RelativeDocumentMoniker": "Repository\\UsuarioRepository.cs",
+              "ToolTip": "C:\\Users\\erika\\OneDrive\\Documentos\\Backend 03-11\\Segunda Entrega\\Repository\\UsuarioRepository.cs",
+              "RelativeToolTip": "Repository\\UsuarioRepository.cs",
+              "ViewState": "AgIAAB4AAAAAAAAAAAAcwDAAAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-17T19:25:28.931Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "FileUploadOperationFilter.cs",
+              "DocumentMoniker": "C:\\Users\\erika\\OneDrive\\Documentos\\Backend 03-11\\Segunda Entrega\\Filters\\FileUploadOperationFilter.cs",
+              "RelativeDocumentMoniker": "Filters\\FileUploadOperationFilter.cs",
+              "ToolTip": "C:\\Users\\erika\\OneDrive\\Documentos\\Backend 03-11\\Segunda Entrega\\Filters\\FileUploadOperationFilter.cs",
+              "RelativeToolTip": "Filters\\FileUploadOperationFilter.cs",
+              "ViewState": "AgIAAAQAAAAAAAAAAAA9wAsAAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-17T21:32:14.296Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "UsuarioService.cs",
+              "DocumentMoniker": "C:\\Users\\erika\\OneDrive\\Documentos\\Backend 03-11\\Segunda Entrega\\Service\\UsuarioService.cs",
+              "RelativeDocumentMoniker": "Service\\UsuarioService.cs",
+              "ToolTip": "C:\\Users\\erika\\OneDrive\\Documentos\\Backend 03-11\\Segunda Entrega\\Service\\UsuarioService.cs",
+              "RelativeToolTip": "Service\\UsuarioService.cs",
+              "ViewState": "AgIAABgAAAAAAAAAAAAIwCoAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-17T19:17:26.031Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "ProjetoPI.http",
+              "DocumentMoniker": "C:\\Users\\erika\\OneDrive\\Documentos\\Backend 03-11\\Segunda Entrega\\ProjetoPI.http",
+              "RelativeDocumentMoniker": "ProjetoPI.http",
+              "ToolTip": "C:\\Users\\erika\\OneDrive\\Documentos\\Backend 03-11\\Segunda Entrega\\ProjetoPI.http",
+              "RelativeToolTip": "ProjetoPI.http",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003502|",
+              "WhenOpened": "2024-11-17T19:07:15.214Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "OngService.cs",
+              "DocumentMoniker": "C:\\Users\\erika\\OneDrive\\Documentos\\Backend 03-11\\Segunda Entrega\\Service\\OngService.cs",
+              "RelativeDocumentMoniker": "Service\\OngService.cs",
+              "ToolTip": "C:\\Users\\erika\\OneDrive\\Documentos\\Backend 03-11\\Segunda Entrega\\Service\\OngService.cs",
+              "RelativeToolTip": "Service\\OngService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-17T19:41:14.009Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "IUsuarioRepository.cs",
+              "DocumentMoniker": "C:\\Users\\erika\\OneDrive\\Documentos\\Backend 03-11\\Segunda Entrega\\Interface\\IUsuarioRepository.cs",
+              "RelativeDocumentMoniker": "Interface\\IUsuarioRepository.cs",
+              "ToolTip": "C:\\Users\\erika\\OneDrive\\Documentos\\Backend 03-11\\Segunda Entrega\\Interface\\IUsuarioRepository.cs",
+              "RelativeToolTip": "Interface\\IUsuarioRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAkAAAA/AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-17T19:24:57.322Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 21,
-              "Title": "Tipo.cs",
-              "DocumentMoniker": "C:\\Users\\erika\\OneDrive\\Documentos\\Backend 03-11\\Segunda Entrega\\Enum\\Tipo.cs",
-              "RelativeDocumentMoniker": "Enum\\Tipo.cs",
-              "ToolTip": "C:\\Users\\erika\\OneDrive\\Documentos\\Backend 03-11\\Segunda Entrega\\Enum\\Tipo.cs",
-              "RelativeToolTip": "Enum\\Tipo.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Title": "IUsuarioService.cs",
+              "DocumentMoniker": "C:\\Users\\erika\\OneDrive\\Documentos\\Backend 03-11\\Segunda Entrega\\Interface\\IUsuarioService.cs",
+              "RelativeDocumentMoniker": "Interface\\IUsuarioService.cs",
+              "ToolTip": "C:\\Users\\erika\\OneDrive\\Documentos\\Backend 03-11\\Segunda Entrega\\Interface\\IUsuarioService.cs",
+              "RelativeToolTip": "Interface\\IUsuarioService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-06T01:11:29.646Z"
+              "WhenOpened": "2024-11-17T19:30:16.004Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "OngRepository.cs",
+              "DocumentMoniker": "C:\\Users\\erika\\OneDrive\\Documentos\\Backend 03-11\\Segunda Entrega\\Repository\\OngRepository.cs",
+              "RelativeDocumentMoniker": "Repository\\OngRepository.cs",
+              "ToolTip": "C:\\Users\\erika\\OneDrive\\Documentos\\Backend 03-11\\Segunda Entrega\\Repository\\OngRepository.cs",
+              "RelativeToolTip": "Repository\\OngRepository.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAQwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-17T16:42:52.46Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "ApplicationDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\erika\\OneDrive\\Documentos\\Backend 03-11\\Segunda Entrega\\Data\\ApplicationDbContext.cs",
+              "RelativeDocumentMoniker": "Data\\ApplicationDbContext.cs",
+              "ToolTip": "C:\\Users\\erika\\OneDrive\\Documentos\\Backend 03-11\\Segunda Entrega\\Data\\ApplicationDbContext.cs",
+              "RelativeToolTip": "Data\\ApplicationDbContext.cs",
+              "ViewState": "AgIAABMAAAAAAAAAAAA0wAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-17T16:43:11.386Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "ProjetoPI.csproj",
+              "DocumentMoniker": "C:\\Users\\erika\\OneDrive\\Documentos\\Backend 03-11\\Segunda Entrega\\ProjetoPI.csproj",
+              "RelativeDocumentMoniker": "ProjetoPI.csproj",
+              "ToolTip": "C:\\Users\\erika\\OneDrive\\Documentos\\Backend 03-11\\Segunda Entrega\\ProjetoPI.csproj",
+              "RelativeToolTip": "ProjetoPI.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-11-17T02:32:24.5Z"
             }
           ]
         }

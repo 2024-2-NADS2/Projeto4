@@ -1,5 +1,8 @@
-﻿using Microsoft.AspNetCore.Http;
+﻿using Microsoft.ApplicationInsights;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.Extensions.Logging;  // Importando o namespace para ILogger
+using MySql.Data.MySqlClient;
 using ProjetoPI.DTO;
 using ProjetoPI.Interface;
 using ProjetoPI.Model;
@@ -16,14 +19,42 @@ namespace ProjetoPI.Controllers
         private readonly IUsuarioRepository _usuarioRepository; // Repositório para usuários
         private readonly IDoadorRepository _doadorRepository;   // Repositório para doadores
         private readonly IOngRepository _ongRepository;         // Repositório para ONGs
+        private readonly TelemetryClient _telemetryClient;
+        private readonly ILogger<UsuarioController> _logger; // Adicionando o logger
 
-        public UsuarioController(IUsuarioService usuarioService, IUsuarioRepository usuarioRepository, IDoadorRepository doadorRepository, IOngRepository ongRepository)
+        // Construtor atualizado com o ILogger
+        public UsuarioController(
+            IUsuarioService usuarioService,
+            IUsuarioRepository usuarioRepository,
+            IDoadorRepository doadorRepository,
+            IOngRepository ongRepository,
+            TelemetryClient telemetryClient,
+            ILogger<UsuarioController> logger)
         {
             _usuarioService = usuarioService;
             _usuarioRepository = usuarioRepository;
             _doadorRepository = doadorRepository; // Inicializa o repositório de doadores
             _ongRepository = ongRepository;       // Inicializa o repositório de ONGs
+            _telemetryClient = telemetryClient;
+            _logger = logger;  // Inicializa o logger
         }
+        [HttpGet("teste-conexao")]
+        public IActionResult TestarConexao()
+        {
+            try
+            {
+                using (var connection = new MySqlConnection("Server=sypbancodedados.mysql.database.azure.com;Database=testeazure;User=admin_syp;Password=Syp12345;SslMode=Required;AllowPublicKeyRetrieval=True;"))
+                {
+                    connection.Open();
+                    return Ok("Conexão bem-sucedida!");
+                }
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, $"Erro: {ex.Message}");
+            }
+        }
+
 
         [HttpPost("cadastrar-doador")]
         public IActionResult CadastrarDoador([FromBody] Doador novoDoador)
@@ -71,58 +102,115 @@ namespace ProjetoPI.Controllers
         [HttpPost("cadastrar-ong")]
         public IActionResult CadastrarOng([FromBody] Ong novaOng)
         {
-            if (novaOng == null)
+            try
             {
-                return BadRequest("Dados inválidos.");
-            }
+                if (novaOng == null)
+                {
+                    return BadRequest("Dados inválidos.");
+                }
 
-            if (string.IsNullOrEmpty(novaOng.Nome) ||
-                string.IsNullOrEmpty(novaOng.Email) ||
-                string.IsNullOrEmpty(novaOng.Senha) ||
-                string.IsNullOrEmpty(novaOng.Cnpj) ||
-                string.IsNullOrEmpty(novaOng.Endereco) ||
-                string.IsNullOrEmpty(novaOng.Telefone))
+                if (string.IsNullOrEmpty(novaOng.Nome) ||
+                    string.IsNullOrEmpty(novaOng.Email) ||
+                    string.IsNullOrEmpty(novaOng.Senha) ||
+                    string.IsNullOrEmpty(novaOng.Cnpj) ||
+                    string.IsNullOrEmpty(novaOng.Endereco) ||
+                    string.IsNullOrEmpty(novaOng.Telefone))
+                {
+                    return BadRequest("Todos os campos são obrigatórios e devem ser preenchidos corretamente.");
+                }
+
+                // Verificar se o e-mail ou CNPJ já estão cadastrados
+                var ongExistente = _ongRepository.GetOngByEmail(novaOng.Email);
+                if (ongExistente != null)
+                {
+                    return BadRequest("Este e-mail já está cadastrado.");
+                }
+
+                // Preencher DataCadastro com a data atual
+                novaOng.DataCadastro = DateTime.Now;
+
+                // Persistir a nova ONG no banco de dados
+                _ongRepository.AdicionarOng(novaOng);
+
+                return Ok("ONG cadastrada com sucesso!");
+            }
+            catch (Exception ex)
             {
-                return BadRequest("Todos os campos são obrigatórios e devem ser preenchidos corretamente.");
+                _telemetryClient.TrackException(ex);  // Registra a exceção no Application Insights
+                _logger.LogError($"Erro ao cadastrar ONG: {ex.Message}", ex);  // Usando o logger para registrar o erro
+                return StatusCode(500, "Erro interno no servidor.");
             }
-
-            // Verificar se o e-mail ou CNPJ já estão cadastrados
-            var ongExistente = _ongRepository.GetOngByEmail(novaOng.Email);
-            if (ongExistente != null)
-            {
-                return BadRequest("Este e-mail já está cadastrado.");
-            }
-
-            // Preencher DataCadastro com a data atual
-            novaOng.DataCadastro = DateTime.Now;
-
-            // Persistir a nova ONG no banco de dados
-            _ongRepository.AdicionarOng(novaOng);
-
-            return Ok("ONG cadastrada com sucesso!");
         }
 
         [HttpGet("quantidade")]
         public IActionResult GetQuantidadeUsuarios()
         {
-            int quantidade = _usuarioRepository.GetQuantidadeUsuarios(); // Método no repositório
-            return Ok(new { Quantidade = quantidade });
+            try
+            {
+                int quantidade = _usuarioRepository.GetQuantidadeUsuarios(); // Método no repositório
+                return Ok(new { Quantidade = quantidade });
+            }
+            catch (Exception ex)
+            {
+                _telemetryClient.TrackException(ex);  // Registra a exceção no Application Insights
+                _logger.LogError($"Erro ao obter quantidade de usuários: {ex.Message}", ex);  // Usando o logger para registrar o erro
+                return StatusCode(500, "Erro interno no servidor.");
+            }
         }
 
         [HttpPost("login")]
         public IActionResult Login([FromBody] UsuarioDTO usuarioCadastrado)
         {
-            if (usuarioCadastrado == null || string.IsNullOrEmpty(usuarioCadastrado.Email) || string.IsNullOrEmpty(usuarioCadastrado.Senha))
+            try
             {
-                return BadRequest("Email e senha são obrigatórios.");
-            }
+                if (usuarioCadastrado == null || string.IsNullOrEmpty(usuarioCadastrado.Email) || string.IsNullOrEmpty(usuarioCadastrado.Senha))
+                {
+                    return BadRequest("Email e senha são obrigatórios.");
+                }
 
-            bool isValid = _usuarioService.ValidarLogin(usuarioCadastrado.Email, usuarioCadastrado.Senha);
-            if (isValid)
-            {
-                return Ok("Login bem-sucedido!");
+                var usuario = _usuarioRepository.GetUsuarioByEmail(usuarioCadastrado.Email);
+                if (usuario != null && usuario.Senha == usuarioCadastrado.Senha)
+                {
+                    // Armazenando dados do usuário na sessão
+                    HttpContext.Session.SetInt32("UserId", usuario.IdUsuario);
+                    HttpContext.Session.SetString("UserName", usuario.Nome);
+                    HttpContext.Session.SetString("UserEmail", usuario.Email);
+
+                    return Ok("Login bem-sucedido!");
+                }
+
+                return Unauthorized("Email ou senha inválidos.");
             }
-            return Unauthorized("Email ou senha inválidos.");
+            catch (Exception ex)
+            {
+                _logger.LogError($"Erro ao fazer login: {ex.Message}", ex);
+                return StatusCode(500, "Erro interno no servidor.");
+            }
         }
+
+
+
+        [HttpGet("get-user-id")]
+        public IActionResult GetUserId()
+        {
+            try
+            {
+                // Obtendo o ID do usuário da sessão
+                var usuarioId = HttpContext.Session.GetInt32("UserId");
+
+                if (usuarioId == null)
+                {
+                    return Unauthorized("Usuário não está logado.");
+                }
+
+                return Ok(new { UserId = usuarioId });
+            }
+            catch (Exception ex)
+            {
+                _logger.LogError($"Erro ao obter ID do usuário: {ex.Message}", ex);
+                return StatusCode(500, "Erro interno no servidor.");
+            }
+        }
+
     }
 }

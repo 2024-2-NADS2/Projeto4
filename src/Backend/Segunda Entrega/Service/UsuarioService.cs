@@ -18,6 +18,11 @@ namespace ProjetoPI.Service
             return usuario != null; // Retorna verdadeiro se o usuário foi encontrado
         }
 
+        public Usuario GetUsuarioById(int id)
+        {
+            return _usuarioRepository.GetUsuarioById(id); // Chama o repositório para obter o usuário
+        }
+
 
         public void CadastrarUsuario(Usuario usuario)
         {

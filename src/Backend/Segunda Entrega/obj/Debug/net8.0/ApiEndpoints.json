@@ -102,6 +102,16 @@
   },
   {
     "ContainingType": "ProjetoPI.Controllers.UsuarioController",
+    "Method": "GetUserId",
+    "RelativePath": "api/Usuario/get-user-id",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ProjetoPI.Controllers.UsuarioController",
     "Method": "Login",
     "RelativePath": "api/Usuario/login",
     "HttpMethod": "POST",
@@ -120,6 +130,16 @@
     "ContainingType": "ProjetoPI.Controllers.UsuarioController",
     "Method": "GetQuantidadeUsuarios",
     "RelativePath": "api/Usuario/quantidade",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ProjetoPI.Controllers.UsuarioController",
+    "Method": "TestarConexao",
+    "RelativePath": "api/Usuario/teste-conexao",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,

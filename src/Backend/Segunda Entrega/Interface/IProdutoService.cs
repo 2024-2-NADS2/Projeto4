@@ -1,4 +1,6 @@
 ﻿using ProjetoPI.Model;
+using System.Threading.Tasks;
+using Microsoft.AspNetCore.Http;
 
 public interface IProdutoService
 {

@@ -45,9 +45,8 @@ public class UsuarioRepository : IUsuarioRepository
 
     public Usuario GetUsuarioById(int id)
     {
-        return  _context.Usuarios.FirstOrDefault(u => u.IdUsuario == id);
+        return _context.Usuarios.FirstOrDefault(u => u.IdUsuario == id);
     }
-
     public async Task<bool> VerificarUsuarioExistente(string email)
     {
         var usuarioExistente = await _context.Usuarios

@@ -8,6 +8,8 @@ namespace ProjetoPI.Interface
         void CadastrarUsuario(Usuario usuario);
         //List<Usuario> GetAllUsuarios();
         Usuario GetUsuarioByEmailSenha(string email, string senha);
+        Usuario GetUsuarioById(int id);
+
 
 
     }

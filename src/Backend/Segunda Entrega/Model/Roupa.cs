@@ -3,16 +3,9 @@ using System.Text.Json.Serialization;
 
 public class Roupa : Produto
 {
-    [Required]
-    public TipoRoupa TipoRoupa { get; set; }
+    public string TipoRoupa { get; set; }// Valor padrão 0 (Camisa)
+
     public string Tamanho { get; set; }
     public string Cor { get; set; }
 }
 
-public enum TipoRoupa
-{
-    Camisa,
-    Calca,
-    Sapato,
-    Acessorio
-}

@@ -1,9 +1,7 @@
-using Microsoft.AspNetCore.Builder;
-using Microsoft.AspNetCore.Hosting;
-using Microsoft.Extensions.DependencyInjection;
-using Microsoft.Extensions.Hosting;
-using Microsoft.OpenApi.Models;
+using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.OpenApi.Models;
+using MySql.Data.MySqlClient;
 using ProjetoPI.Data;
 using ProjetoPI.Interface;
 using ProjetoPI.Repository;
@@ -11,18 +9,58 @@ using ProjetoPI.Service;
 
 var builder = WebApplication.CreateBuilder(args);
 
-// Add services to the container.
-builder.Services.AddControllers();
+// Configure a string de conexão MySQL
+var mysqlConnectionBuilder = new MySqlConnectionStringBuilder
+{
+    Server = "sypbancodedados.mysql.database.azure.com",  // Substitua pelo seu servidor
+    Database = "testeazure",  // Substitua pelo nome do seu banco de dados
+    UserID = "admin_syp",  // Substitua pelo seu usuário
+    Password = "Syp12345",  // Substitua pela sua senha
+    SslMode = MySqlSslMode.Required,
+    AllowPublicKeyRetrieval = true
+};
+
+// Adiciona CORS para permitir requisições de localhost
+builder.Services.AddCors(options =>
+{
+    options.AddPolicy("AllowLocalhost",
+        policy =>
+        {
+            policy.WithOrigins("http://localhost:3000")  // Permite requisições de localhost
+                .AllowAnyHeader()   // Permite qualquer cabeçalho
+                .AllowAnyMethod();   // Permite qualquer método HTTP (GET, POST, etc.)
+        });
+});
+
+// Habilita suporte a sessão
+builder.Services.AddDistributedMemoryCache();  // Usando memória para armazenar sessão
+builder.Services.AddSession(options =>
+{
+    options.IdleTimeout = TimeSpan.FromMinutes(30);  // Tempo de expiração da sessão
+    options.Cookie.HttpOnly = true;  // Só acessível via HTTP
+});
+
+// Configuração de autenticação, caso esteja usando cookies ou JWT
+builder.Services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationScheme)
+    .AddCookie(options =>
+    {
+        options.LoginPath = "/Login"; // Caminho da página de login
+        options.AccessDeniedPath = "/AccessDenied"; // Caminho de acesso negado
+    });
+
+// Registra os serviços e repositórios no contêiner de DI
+builder.Services.AddControllersWithViews(); // Suporte para Views além de Controllers (se necessário)
+
 builder.Services.AddSwaggerGen(c =>
 {
     c.SwaggerDoc("v1", new OpenApiInfo { Title = "ProjetoPI", Version = "v1" });
 });
 
-// Registra o contexto do banco de dados
+// Registra o contexto do banco de dados com a string de conexão do MySQL
 builder.Services.AddDbContext<ApplicationDbContext>(options =>
-    options.UseMySQL(builder.Configuration.GetConnectionString("DefaultConnection"))); // String de conexão
+    options.UseMySQL(mysqlConnectionBuilder.ConnectionString));
 
-// Registra os serviços e repositórios no contêiner de DI
+// Registra os repositórios e serviços no contêiner de DI
 builder.Services.AddScoped<IUsuarioRepository, UsuarioRepository>();
 builder.Services.AddScoped<IUsuarioService, UsuarioService>();
 builder.Services.AddScoped<IDoadorRepository, DoadorRepository>();
@@ -30,18 +68,51 @@ builder.Services.AddScoped<IOngRepository, OngRepository>();
 builder.Services.AddScoped<IProdutoRepository, ProdutoRepository>();
 builder.Services.AddScoped<IProdutoService, ProdutoService>();
 
+// Adiciona o HttpContextAccessor para sessões
+builder.Services.AddHttpContextAccessor();
+
+// Configuração do Application Insights (se necessário)
+builder.Services.AddApplicationInsightsTelemetry(options =>
+{
+    options.ConnectionString = builder.Configuration["ApplicationInsights:ConnectionString"];
+});
+
+// Adiciona logs
+builder.Logging.AddConsole(); // Habilita logs no console
+
 var app = builder.Build();
 
-// Configure the HTTP request pipeline.
+// Configure o pipeline de solicitação HTTP
 if (app.Environment.IsDevelopment())
 {
     app.UseDeveloperExceptionPage();
     app.UseSwagger();
     app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "ProjetoPI v1"));
 }
+else
+{
+    // Para ambiente de produção
+    app.UseExceptionHandler("/Home/Error"); // Tratamento de exceções
+    app.UseHsts(); // Habilita HTTP Strict Transport Security
+    app.UseSwagger();
+    app.UseSwaggerUI(c =>
+    {
+        c.SwaggerEndpoint("/swagger/v1/swagger.json", "ProjetoPI v1");
+        c.RoutePrefix = string.Empty;  // Para exibir o Swagger na raiz
+    });
+}
 
-app.UseHttpsRedirection();
+// Ativa o CORS com a política configurada
+app.UseCors("AllowLocalhost");
+
+// Ativa o uso de sessão
+app.UseSession();
+
+// Ativa a autenticação
+app.UseAuthentication();  // Certifique-se de adicionar autenticação
 app.UseAuthorization();
+
+// Mapear controladores
 app.MapControllers();
 
 app.Run();

@@ -32,8 +32,9 @@ namespace ProjetoPI.Migrations
                     b.Property<int>("DoadorId")
                         .HasColumnType("int");
 
-                    b.Property<int>("Estado")
-                        .HasColumnType("int");
+                    b.Property<string>("Estado")
+                        .IsRequired()
+                        .HasColumnType("longtext");
 
                     b.HasKey("Id");
 
@@ -122,8 +123,9 @@ namespace ProjetoPI.Migrations
                         .IsRequired()
                         .HasColumnType("longtext");
 
-                    b.Property<int>("TipoRoupa")
-                        .HasColumnType("int");
+                    b.Property<string>("TipoRoupa")
+                        .IsRequired()
+                        .HasColumnType("longtext");
 
                     b.ToTable("Roupas", (string)null);
                 });
