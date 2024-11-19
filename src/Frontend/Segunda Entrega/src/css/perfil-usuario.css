@@ -3,7 +3,7 @@ body {
   font-family: Arial, sans-serif; /* Define a fonte para Arial ou sans-serif se Arial não estiver disponível */
   margin: 0; /* Remove as margens padrão */
   padding: 0; /* Remove o padding padrão */
-  background-color: #f9f9f9; /* Define uma cor de fundo clara */
+  background-color: #f7efd5; /* Define uma cor de fundo clara */
 }
 
 /* Estilo do cabeçalho (header) */
@@ -12,7 +12,7 @@ body {
   justify-content: space-between; /* Distribui os itens entre as extremidades do cabeçalho */
   align-items: center; /* Alinha verticalmente os itens ao centro */
   padding: 10px 20px; /* Adiciona padding (espaçamento interno) nas laterais */
-  background-color: #ffefb3; /* Cor de fundo suave para o cabeçalho */
+  background-color: #2A6783; /* Cor de fundo suave para o cabeçalho */
   flex-wrap: wrap; /* Permite que os itens quebrem linha em telas menores */
   text-align: center; /* Centraliza os itens em telas pequenas */
 }
@@ -28,7 +28,7 @@ nav {
 nav a {
   margin: 0 15px; /* Espaçamento entre os links */
   text-decoration: none; /* Remove o sublinhado dos links */
-  color: #333; /* Define a cor do texto do link */
+  color: #fff; /* Define a cor do texto do link */
   font-weight: 500; /* Define a espessura da fonte */
 }
 
@@ -98,15 +98,50 @@ nav a {
   font-size: 12px; /* Tamanho da fonte */
 }
 
+.user-menu span{
+  color: #fff;
+}
+
 /* Estilo do botão de editar perfil */
 .edit-button {
   margin-left: auto; /* Empurra o botão para a direita */
-  background-color: #007bff; /* Cor de fundo do botão */
+  background-color: #2A6783; /* Cor de fundo do botão */
   color: #fff; /* Cor do texto do botão */
   border: none; /* Remove a borda padrão */
   border-radius: 4px; /* Bordas arredondadas */
   padding: 10px 15px; /* Define o tamanho do botão */
   cursor: pointer; /* Altera o cursor para uma mão ao passar sobre o botão */
+}
+
+.edit-button:hover{
+  background-color: #174f69;
+}
+
+.status {
+  display: inline-block; /* Para criar um bloco em volta do texto */
+  padding: 5px 10px; /* Espaçamento interno */
+  border-radius: 5px; /* Bordas arredondadas */
+  font-size: 0.9rem; /* Tamanho do texto */
+  font-weight: bold; /* Texto em negrito */
+  text-align: center; /* Centraliza o texto */
+}
+
+.status.in-review {
+  background-color: #FFF3CD; /* Cor para "Em análise" */
+  color: #856404; /* Texto em contraste */
+  border: 1px solid #FFECB5; /* Bordas com tom mais escuro */
+}
+
+.status.delivered {
+  background-color: #D1E7DD; /* Cor para "Entregue" */
+  color: #155724; /* Texto em contraste */
+  border: 1px solid #A3D4BC; /* Bordas com tom mais escuro */
+}
+
+.status.unavailable {
+  background-color: #F8D7DA; /* Cor para "Indisponível" */
+  color: #721C24; /* Texto em contraste */
+  border: 1px solid #F5C6CB; /* Bordas com tom mais escuro */
 }
 
 /* Estilo das seções de itens (Itens doados, Meus Interesses, etc.) */
@@ -128,37 +163,64 @@ nav a {
 /* Estilo do título das seções */
 .section h3 {
   text-align: left; /* Alinha o título à esquerda */
-  margin-top: 0; /* Remove a margem superior */
+  margin-top: 10px; /* Remove a margem superior */
   padding-top: 0; /* Remove o padding superior */
   margin-left: 2rem; /* Adiciona um pequeno espaçamento à esquerda */
 }
 
-/* Estilo dos itens dentro de cada seção */
+/* Detalhes do item (título e status) */
+.item-details {
+  margin-left: 15px; /* Espaço entre a imagem e os detalhes */
+  flex: 1; /* Ocupa o espaço restante para empurrar o status */
+}
+
+/* Título do item */
+.item-details .title {
+  font-size: 16px;
+  font-weight: bold;
+  margin: 0;
+  color: #333;
+}
+
 .item {
-  width: 1100px; /* Largura controlada para centralização */
-  height: 135px; /* Altura do item */
-  display: flex; /* Organiza os itens dentro do card em linha */
-  align-items: center; /* Alinha os itens verticalmente */
-  justify-content: space-between; /* Distribui os itens entre as extremidades */
-  background-color: #fff; /* Cor de fundo branca */
-  padding: 20px; /* Adiciona espaçamento interno */
-  border-radius: 8px; /* Bordas arredondadas */
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra suave para dar profundidade */
-  margin: 10px auto; /* Centraliza o item com margem automática */
+  display: flex; /* Flexbox para organizar os elementos horizontalmente */
+  align-items: center; /* Centraliza os elementos verticalmente */
+  width: 1100px;
+  height: 80px;
+  background-color: #fff;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin: 10px auto;
 }
 
-/* Estilo das imagens dos itens */
-.item img {
-  width: 60px; /* Largura da imagem */
-  height: 60px; /* Altura da imagem */
-  border-radius: 4px; /* Bordas arredondadas */
-  margin-right: 15px; /* Adiciona espaçamento à direita da imagem */
-}
-
-/* Estilo do status dos itens */
+/* Status no canto direito, centralizado verticalmente */
 .status {
-  font-size: 14px; /* Tamanho da fonte */
-  font-weight: bold; /* Deixa o texto em negrito */
+  margin-left: auto; /* Empurra o status para o lado direito */
+  font-size: 14px;
+  color: #666;
+  text-align: right; /* Alinha o texto dentro do próprio status */
+  display: flex; /* Necessário apenas se o status tiver conteúdo adicional */
+  align-items: center; /* Garante centralização vertical (extra, caso necessário) */
+}
+
+/* Estilo do conteúdo ao lado da imagem */
+.item div {
+  display: flex; /* Organiza o título e o status em linha */
+  flex-direction: column; /* Mantém o título acima do status */
+  justify-content: center; /* Alinha verticalmente os textos */
+}
+
+/* Estilo do título */
+.item div p:first-child {
+  font-size: 16px; /* Define o tamanho da fonte do título */
+  margin-bottom: 2rem;
+  font-weight: bold; /* Deixa o título em negrito */
+}
+
+/* Estilo do status */
+.item div .status {
+  margin-top: 5px; /* Espaçamento entre título e status */
 }
 
 /* Cores para diferentes status de item */
@@ -177,6 +239,7 @@ nav a {
 .unavailable {
   color: red; /* Cor para itens não disponíveis */
 }
+
 @media (max-width: 600px) {
   .header {
     flex-direction: column; /* Alinha os itens do cabeçalho em coluna */
