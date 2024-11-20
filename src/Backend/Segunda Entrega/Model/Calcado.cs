@@ -5,9 +5,9 @@ using System.Text.Json.Serialization;
 namespace ProjetoPI.Model
 {
     public class Calcado : Produto
-    {      
-        public string Tamanho { get; set; }
+    {
+        public int? Tamanho { get; set; }  // Tamanho pode ser nulo
 
-      
+
     }
 }

@@ -23,14 +23,15 @@ var mysqlConnectionBuilder = new MySqlConnectionStringBuilder
 // Adiciona CORS para permitir requisições de localhost
 builder.Services.AddCors(options =>
 {
-    options.AddPolicy("AllowLocalhost",
-        policy =>
-        {
-            policy.WithOrigins("http://localhost:3000")  // Permite requisições de localhost
-                .AllowAnyHeader()   // Permite qualquer cabeçalho
-                .AllowAnyMethod();   // Permite qualquer método HTTP (GET, POST, etc.)
-        });
+    options.AddPolicy("AllowLocalhost", policy =>
+    {
+        policy.WithOrigins("http://localhost:3000")
+              .AllowAnyHeader()
+              .AllowAnyMethod() // Inclui o método OPTIONS
+              .SetPreflightMaxAge(TimeSpan.FromMinutes(10)); // Cacheia as respostas de preflight
+    });
 });
+
 
 // Habilita suporte a sessão
 builder.Services.AddDistributedMemoryCache();  // Usando memória para armazenar sessão
@@ -104,6 +105,16 @@ else
 
 // Ativa o CORS com a política configurada
 app.UseCors("AllowLocalhost");
+app.Use(async (context, next) =>
+{
+    if (context.Request.Method == "OPTIONS")
+    {
+        context.Response.StatusCode = 200;
+        await context.Response.CompleteAsync();
+        return;
+    }
+    await next();
+});
 
 // Ativa o uso de sessão
 app.UseSession();

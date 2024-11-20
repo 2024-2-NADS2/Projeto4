@@ -113,8 +113,7 @@ namespace ProjetoPI.Controllers
                     string.IsNullOrEmpty(novaOng.Email) ||
                     string.IsNullOrEmpty(novaOng.Senha) ||
                     string.IsNullOrEmpty(novaOng.Cnpj) ||
-                    string.IsNullOrEmpty(novaOng.Endereco) ||
-                    string.IsNullOrEmpty(novaOng.Telefone))
+                    string.IsNullOrEmpty(novaOng.Endereco))
                 {
                     return BadRequest("Todos os campos são obrigatórios e devem ser preenchidos corretamente.");
                 }
@@ -157,7 +156,6 @@ namespace ProjetoPI.Controllers
                 return StatusCode(500, "Erro interno no servidor.");
             }
         }
-
         [HttpPost("login")]
         public IActionResult Login([FromBody] UsuarioDTO usuarioCadastrado)
         {
@@ -165,7 +163,7 @@ namespace ProjetoPI.Controllers
             {
                 if (usuarioCadastrado == null || string.IsNullOrEmpty(usuarioCadastrado.Email) || string.IsNullOrEmpty(usuarioCadastrado.Senha))
                 {
-                    return BadRequest("Email e senha são obrigatórios.");
+                    return BadRequest(new { message = "Email e senha são obrigatórios." });
                 }
 
                 var usuario = _usuarioRepository.GetUsuarioByEmail(usuarioCadastrado.Email);
@@ -176,15 +174,21 @@ namespace ProjetoPI.Controllers
                     HttpContext.Session.SetString("UserName", usuario.Nome);
                     HttpContext.Session.SetString("UserEmail", usuario.Email);
 
-                    return Ok("Login bem-sucedido!");
+                    // Retornando o nome do usuário junto com o tipo
+                    return Ok(new
+                    {
+                        message = "Login bem-sucedido!",
+                        tipoUsuario = usuario.TipoUsuario,
+                        userName = usuario.Nome // Retornando o nome do usuário
+                    });
                 }
 
-                return Unauthorized("Email ou senha inválidos.");
+                return Unauthorized(new { message = "Email ou senha inválidos." });
             }
             catch (Exception ex)
             {
                 _logger.LogError($"Erro ao fazer login: {ex.Message}", ex);
-                return StatusCode(500, "Erro interno no servidor.");
+                return StatusCode(500, new { message = "Erro interno no servidor." });
             }
         }
 

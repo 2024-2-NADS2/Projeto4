@@ -28,7 +28,6 @@ namespace ProjetoPI.Service
         {
             _usuarioRepository.AdicionarUsuario(usuario);
         }
-
         public List<Usuario> ObterTodosUsuarios()
         {
             return _usuarioRepository.GetAllUsuarios();
