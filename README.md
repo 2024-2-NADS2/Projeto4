@@ -101,7 +101,39 @@ As seguintes ferramentas que foram utilizadas na construção do projeto:
   
 
 ## 🗃 Histórico de lançamentos
-
+iniciando react - 30/09
+Removendo todos os arquivos da main para organização - 30/09
+Subindo frontend - 30/09
+Organizando arquivos dentro da pasta SYP-frontend - 30/09
+Add files via upload - 30/09
+Pagina como-funciona - 30/09
+Adicionando frontend - 30/09
+subindo pdf - 30/09
+subindo figma - 30/09 
+adicionando logo - 30/09 
+Create README.md - 30/09
+Update README.md - 30/09
+Terminando página como-funciona - 01/10
+Organizando pastas - 02/10
+subindo usuarios - 07/10
+inserindo try catch - 07/10
+criando banco de dados - 20/10
+Organizando arquitetura - 29/10
+inserindo tela contato - 30/10
+Create Prototipo Site Figma  - 30/10
+Subindo azure  - 31/10
+inserindo login - 31/10
+Subindo backend na nuvem - 31/10
+Login e cadastro funcionando - 17/10
+calcados e livros adicionados - 13/11
+tela cadastro - 13/11
+tela de login e cadastro feitas - 14/11
+Autenticacoes - 18/11
+Ajustes na pagina do usuario - 19/11
+Subindo guia e protótipo FIGMA - 19/11
+Entrega final modelagem de software - 19/11
+Create README.md - 20/11
+Crud finalizado - 20/11
 
 
 ## 📋 Licença/License
@@ -110,9 +142,9 @@ SyP - Save's Your Priority by Arthur Felipe Alves Nunes, Diogo Moreira Bomfim Ba
 
 Aqui estão as referências usadas no projeto.
 
-1. <https://github.com/iuricode/readme-template>
-2. <https://github.com/gabrieldejesus/readme-model>
-3. <https://creativecommons.org/share-your-work/>
-3. <https://chooser-beta.creativecommons.org/>
-4. <https://freesound.org/>
-5. <https://www.toptal.com/developers/gitignore>
+1. SOMMERVILLE, I. Engenharia de Software. 11ª Edição. São Paulo: Pearson Addison-Wesley, 2017.
+2. 
+3. 
+3. 
+4. 
+5. 
