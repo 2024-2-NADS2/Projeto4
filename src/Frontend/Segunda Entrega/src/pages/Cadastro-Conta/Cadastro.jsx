@@ -12,8 +12,7 @@ const CadastroConta = () => {
   const [telefone, setTelefone] = useState(""); // Novo campo
   const [formType, setFormType] = useState("doador"); // Estado para alternar entre "doador" e "empresa"
 
-  // Definindo estados para empresa
-  const [razaoSocial, setRazaoSocial] = useState(""); // Para armazenar a razão social
+
   const [cnpj, setCnpj] = useState(""); // Para armazenar o CNPJ
 
   const handleSubmit = async (e) => {
@@ -37,7 +36,7 @@ const CadastroConta = () => {
       };
     } else {
       usuario = {
-        RazaoSocial: razaoSocial,
+        Nome: nome,
         Cnpj: cnpj,
         Email: email,
         Senha: senha,
@@ -47,12 +46,15 @@ const CadastroConta = () => {
     }
 
     try {
-      const response = await axios.post(
-        "https://appsyp-hta3f0a6grhugmff.brazilsouth-01.azurewebsites.net/api/Usuario/cadastrar-doador",
-        usuario
-      );
+      const apiUrl = formType === "doador"
+        ? "https://appsyp-hta3f0a6grhugmff.brazilsouth-01.azurewebsites.net/api/Usuario/cadastrar-doador"
+        : "https://appsyp-hta3f0a6grhugmff.brazilsouth-01.azurewebsites.net/api/Usuario/cadastrar-ong"; // URL para cadastro de empresa
+
+      const response = await axios.post(apiUrl, usuario);
       alert("Cadastro realizado com sucesso!");
-      localStorage.setItem('nomeUsuario', nome); // Salva o nome do usuário
+      localStorage.setItem('nomeUsuario', nome); 
+      localStorage.setItem("usuarioCadastrado", JSON.stringify(usuario));
+      // Salva o nome do usuário
     } catch (error) {
       if (error.response) {
         // Exibe a mensagem de erro retornada pela API
@@ -124,8 +126,8 @@ const CadastroConta = () => {
                   type="text"
                   placeholder="Razão Social"
                   required
-                  value={razaoSocial}
-                  onChange={(e) => setRazaoSocial(e.target.value)}
+                  value={nome}
+                  onChange={(e) => setNome(e.target.value)}
                 />
               </label>
               <label>

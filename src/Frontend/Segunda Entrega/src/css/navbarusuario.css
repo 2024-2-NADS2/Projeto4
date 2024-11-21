@@ -1,0 +1,25 @@
+/* Estilo do cabeçalho (header) */
+.header {
+    display: flex; /* Usa o Flexbox para organizar o layout do cabeçalho */
+    justify-content: space-between; /* Distribui os itens entre as extremidades do cabeçalho */
+    align-items: center; /* Alinha verticalmente os itens ao centro */
+    padding: 10px 20px; /* Adiciona padding (espaçamento interno) nas laterais */
+    background-color: #2A6783; /* Cor de fundo suave para o cabeçalho */
+    flex-wrap: wrap; /* Permite que os itens quebrem linha em telas menores */
+    text-align: center; /* Centraliza os itens em telas pequenas */
+  }
+  
+  /* Estilo da barra de navegação (nav) */
+  nav {
+    display: flex; /* Usa Flexbox para alinhar os itens na horizontal */
+    justify-content: center; /* Centraliza os itens de navegação */
+    flex-grow: 1; /* Faz com que o nav ocupe o máximo de espaço possível */
+  }
+  
+  /* Estilo dos links dentro da navegação */
+  nav a {
+    margin: 0 15px; /* Espaçamento entre os links */
+    text-decoration: none; /* Remove o sublinhado dos links */
+    color: #fff; /* Define a cor do texto do link */
+    font-weight: 500; /* Define a espessura da fonte */
+  }

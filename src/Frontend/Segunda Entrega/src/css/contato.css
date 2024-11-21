@@ -4,7 +4,7 @@
     flex-direction: column;
     align-items: center;
     background-color: #f7e9b6;
-    height: 50rem;
+    height: 80rem;
 }
 
 .contact-card {
@@ -14,7 +14,7 @@
     max-width: 600px;
     width: 100%;
     text-align: center;
-    margin-top: 2rem;
+    margin-top: 5rem;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 

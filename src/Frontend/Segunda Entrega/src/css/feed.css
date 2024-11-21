@@ -1,0 +1,126 @@
+/* feed.css */
+
+/* Barra de navegação */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #0073e6;
+  padding: 10px 20px;
+  color: white;
+}
+
+.logo {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.navbar nav a {
+  margin: 0 10px;
+  color: white;
+  text-decoration: none;
+}
+
+.navbar .profile {
+  font-weight: bold;
+}
+
+/* Caixa de postagem */
+
+.post-box {
+  width: 49%;
+  margin: 20px auto; /* Centraliza o container horizontalmente */
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end; /* Alinha itens (como o botão) à direita */
+}
+
+.post-box textarea {
+  width: 98%;
+  height: 60px;
+  margin-bottom: 10px;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  resize: none;
+}
+
+.post-box button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #0073e6;
+  color: white;
+  cursor: pointer;
+}
+
+.post-box button:hover {
+  background-color: #005bb5;
+}
+
+/* Feed de produtos */
+.feed-container {
+  width: 50%; /* Mesma largura da caixa de postagem */
+  margin: 20px auto; /* Centraliza o container na página */
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  padding: 0; /* Remove o padding para alinhar à largura */
+}
+
+.feed-card {
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 30px;
+  background-color: white;
+  width: 100%; /* Ocupa toda a largura do container */
+  box-sizing: border-box; /* Garante que o padding não aumente a largura total */
+}
+
+.feed-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.profile-pic {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.feed-descricao {
+  margin: 10px 0;
+}
+
+.feed-imagem {
+  width: 100%;
+  max-height: 300px;
+  object-fit: cover;
+  border-radius: 5px;
+  margin: 10px 0;
+}
+
+.feed-footer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.like-btn {
+  background: none;
+  border: none;
+  color: #e63946;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.like-btn:hover {
+  color: #d62727;
+}
+
+

@@ -10,7 +10,11 @@ import Footer from "./components/Footer";
 import Login from "./pages/Login";
 import PerfilUsuario from "./pages/Perfil-Usuario"; 
 import CadastroProduto from "./pages/CadastroProduto";
+import DadosUsuario from "./pages/DadosUsuario"
+import DadosOng from "./pages/DadosOng";
 import "./App.css";
+import PerfilOng from "./pages/Perfil-Ong";
+import Feed from "./pages/Feed";
 
 function App() {
   return (
@@ -26,6 +30,11 @@ function App() {
           <Route path="/login" element={<Login />} />
           <Route path="/user-profile" element={<PerfilUsuario />} />  
           <Route path="/cadastroproduto" element={<CadastroProduto />} /> 
+          <Route path="/dadosusuario" element={<DadosUsuario />} /> 
+          <Route path="/ong-profile" element={<PerfilOng />} /> 
+          <Route path="/dadosong" element={<DadosOng />} /> 
+          <Route path="/feed" element={<Feed />} /> 
+         
         </Routes>
         <FooterWrapper />
       </div>
@@ -37,14 +46,19 @@ function NavbarWrapper() {
   const location = useLocation();
 
   // Renderiza a Navbar apenas se não estiver na página de Cadastro ou Login
-  return location.pathname !== '/cadastro' && location.pathname !== '/login' && location.pathname !== '/user-profile' ? <Navbar /> : null;
+  return location.pathname !== '/cadastro' && location.pathname !== '/login' 
+  && location.pathname !== '/user-profile' && location.pathname !== '/dadosusuario' 
+  && location.pathname !== '/cadastroproduto'  
+  && location.pathname !== '/dadosong' && location.pathname !== '/feed'  ? <Navbar /> : null;
 }
 
 function FooterWrapper() {
   const location = useLocation();
   
   // Renderiza o Footer apenas se não estiver na página de Contato
-  return location.pathname !== '/contato' ? <Footer /> : null;
+  return location.pathname !== '/contato'  && location.pathname !== '/user-profile' && location.pathname !== '/dadosusuario' 
+  && location.pathname !== '/cadastroproduto'  
+  && location.pathname !== '/dadosong' && location.pathname !== '/feed' ? <Footer />  : null;
 }
 
 export default App;

@@ -6,31 +6,7 @@ body {
   background-color: #f7efd5; /* Define uma cor de fundo clara */
 }
 
-/* Estilo do cabeçalho (header) */
-.header {
-  display: flex; /* Usa o Flexbox para organizar o layout do cabeçalho */
-  justify-content: space-between; /* Distribui os itens entre as extremidades do cabeçalho */
-  align-items: center; /* Alinha verticalmente os itens ao centro */
-  padding: 10px 20px; /* Adiciona padding (espaçamento interno) nas laterais */
-  background-color: #2A6783; /* Cor de fundo suave para o cabeçalho */
-  flex-wrap: wrap; /* Permite que os itens quebrem linha em telas menores */
-  text-align: center; /* Centraliza os itens em telas pequenas */
-}
 
-/* Estilo da barra de navegação (nav) */
-nav {
-  display: flex; /* Usa Flexbox para alinhar os itens na horizontal */
-  justify-content: center; /* Centraliza os itens de navegação */
-  flex-grow: 1; /* Faz com que o nav ocupe o máximo de espaço possível */
-}
-
-/* Estilo dos links dentro da navegação */
-nav a {
-  margin: 0 15px; /* Espaçamento entre os links */
-  text-decoration: none; /* Remove o sublinhado dos links */
-  color: #fff; /* Define a cor do texto do link */
-  font-weight: 500; /* Define a espessura da fonte */
-}
 
 /* Estilo do logo */
 .logo {
@@ -112,6 +88,9 @@ nav a {
   padding: 10px 15px; /* Define o tamanho do botão */
   cursor: pointer; /* Altera o cursor para uma mão ao passar sobre o botão */
 }
+a {
+  text-decoration: none;
+}
 
 .edit-button:hover{
   background-color: #174f69;
@@ -192,6 +171,19 @@ nav a {
   border-radius: 8px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   margin: 10px auto;
+}
+
+/* Estilo da imagem do produto (itens dentro das seções) */
+.item img {
+  width: 60px;  /* Define a largura da imagem para 60px */
+  height: 60px; /* Define a altura da imagem para 60px */
+  object-fit: cover; /* Faz com que a imagem se ajuste sem distorção */
+  border-radius: 8px; /* Adiciona bordas arredondadas para um visual mais suave */
+  margin-right: 15px; /* Adiciona espaçamento à direita da imagem */
+}
+/* Estilo para o parágrafo "Você ainda não doou nenhum item." */
+.no-items-message {
+  margin-left: 30px; /* Adiciona um pequeno espaçamento à direita */
 }
 
 /* Status no canto direito, centralizado verticalmente */
