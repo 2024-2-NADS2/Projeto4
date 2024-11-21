@@ -9,59 +9,59 @@ using ProjetoPI.Service;
 
 var builder = WebApplication.CreateBuilder(args);
 
-// Configure a string de conexão MySQL
+// Configure a string de conexÃ£o MySQL
 var mysqlConnectionBuilder = new MySqlConnectionStringBuilder
 {
     Server = "sypbancodedados.mysql.database.azure.com",  // Substitua pelo seu servidor
     Database = "testeazure",  // Substitua pelo nome do seu banco de dados
-    UserID = "admin_syp",  // Substitua pelo seu usuário
+    UserID = "admin_syp",  // Substitua pelo seu usuÃ¡rio
     Password = "Syp12345",  // Substitua pela sua senha
     SslMode = MySqlSslMode.Required,
     AllowPublicKeyRetrieval = true
 };
 
-// Adiciona CORS para permitir requisições de localhost
+// Adiciona CORS para permitir requisiÃ§Ãµes de localhost
 builder.Services.AddCors(options =>
 {
     options.AddPolicy("AllowLocalhost", policy =>
     {
         policy.WithOrigins("http://localhost:3000")
               .AllowAnyHeader()
-              .AllowAnyMethod() // Inclui o método OPTIONS
+              .AllowAnyMethod() // Inclui o mÃ©todo OPTIONS
               .SetPreflightMaxAge(TimeSpan.FromMinutes(10)); // Cacheia as respostas de preflight
     });
 });
 
 
-// Habilita suporte a sessão
-builder.Services.AddDistributedMemoryCache();  // Usando memória para armazenar sessão
+// Habilita suporte a sessÃ£o
+builder.Services.AddDistributedMemoryCache();  // Usando memÃ³ria para armazenar sessÃ£o
 builder.Services.AddSession(options =>
 {
-    options.IdleTimeout = TimeSpan.FromMinutes(30);  // Tempo de expiração da sessão
-    options.Cookie.HttpOnly = true;  // Só acessível via HTTP
+    options.IdleTimeout = TimeSpan.FromMinutes(30);  // Tempo de expiraÃ§Ã£o da sessÃ£o
+    options.Cookie.HttpOnly = true;  // SÃ³ acessÃ­vel via HTTP
 });
 
-// Configuração de autenticação, caso esteja usando cookies ou JWT
+// ConfiguraÃ§Ã£o de autenticaÃ§Ã£o, caso esteja usando cookies ou JWT
 builder.Services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationScheme)
     .AddCookie(options =>
     {
-        options.LoginPath = "/Login"; // Caminho da página de login
+        options.LoginPath = "/Login"; // Caminho da pÃ¡gina de login
         options.AccessDeniedPath = "/AccessDenied"; // Caminho de acesso negado
     });
 
-// Registra os serviços e repositórios no contêiner de DI
-builder.Services.AddControllersWithViews(); // Suporte para Views além de Controllers (se necessário)
+// Registra os serviÃ§os e repositÃ³rios no contÃªiner de DI
+builder.Services.AddControllersWithViews(); // Suporte para Views alÃ©m de Controllers 
 
 builder.Services.AddSwaggerGen(c =>
 {
     c.SwaggerDoc("v1", new OpenApiInfo { Title = "ProjetoPI", Version = "v1" });
 });
 
-// Registra o contexto do banco de dados com a string de conexão do MySQL
+// Registra o contexto do banco de dados com a string de conexÃ£o do MySQL
 builder.Services.AddDbContext<ApplicationDbContext>(options =>
     options.UseMySQL(mysqlConnectionBuilder.ConnectionString));
 
-// Registra os repositórios e serviços no contêiner de DI
+// Registra os repositÃ³rios e serviÃ§os no contÃªiner de DI
 builder.Services.AddScoped<IUsuarioRepository, UsuarioRepository>();
 builder.Services.AddScoped<IUsuarioService, UsuarioService>();
 builder.Services.AddScoped<IDoadorRepository, DoadorRepository>();
@@ -69,10 +69,10 @@ builder.Services.AddScoped<IOngRepository, OngRepository>();
 builder.Services.AddScoped<IProdutoRepository, ProdutoRepository>();
 builder.Services.AddScoped<IProdutoService, ProdutoService>();
 
-// Adiciona o HttpContextAccessor para sessões
+// Adiciona o HttpContextAccessor para sessÃµes
 builder.Services.AddHttpContextAccessor();
 
-// Configuração do Application Insights (se necessário)
+// ConfiguraÃ§Ã£o do Application Insights
 builder.Services.AddApplicationInsightsTelemetry(options =>
 {
     options.ConnectionString = builder.Configuration["ApplicationInsights:ConnectionString"];
@@ -83,7 +83,7 @@ builder.Logging.AddConsole(); // Habilita logs no console
 
 var app = builder.Build();
 
-// Configure o pipeline de solicitação HTTP
+// Configure o pipeline de solicitaÃ§Ã£o HTTP
 if (app.Environment.IsDevelopment())
 {
     app.UseDeveloperExceptionPage();
@@ -92,8 +92,8 @@ if (app.Environment.IsDevelopment())
 }
 else
 {
-    // Para ambiente de produção
-    app.UseExceptionHandler("/Home/Error"); // Tratamento de exceções
+    // Para ambiente de produÃ§Ã£o
+    app.UseExceptionHandler("/Home/Error"); // Tratamento de exceÃ§Ãµes
     app.UseHsts(); // Habilita HTTP Strict Transport Security
     app.UseSwagger();
     app.UseSwaggerUI(c =>
@@ -103,7 +103,7 @@ else
     });
 }
 
-// Ativa o CORS com a política configurada
+// Ativa o CORS com a polÃ­tica configurada
 app.UseCors("AllowLocalhost");
 app.Use(async (context, next) =>
 {
@@ -116,11 +116,11 @@ app.Use(async (context, next) =>
     await next();
 });
 
-// Ativa o uso de sessão
+// Ativa o uso de sessÃ£o
 app.UseSession();
 
-// Ativa a autenticação
-app.UseAuthentication();  // Certifique-se de adicionar autenticação
+// Ativa a autenticaÃ§Ã£o
+app.UseAuthentication();  
 app.UseAuthorization();
 
 // Mapear controladores
