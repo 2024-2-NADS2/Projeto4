@@ -143,8 +143,3 @@ SyP - Save's Your Priority by Arthur Felipe Alves Nunes, Diogo Moreira Bomfim Ba
 Aqui estão as referências usadas no projeto.
 
 1. SOMMERVILLE, I. Engenharia de Software. 11ª Edição. São Paulo: Pearson Addison-Wesley, 2017.
-2. 
-3. 
-3. 
-4. 
-5. 
